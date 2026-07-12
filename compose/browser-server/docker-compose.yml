@@ -1,0 +1,15 @@
+services:
+  firefox:
+    image: lscr.io/linuxserver/firefox:latest
+    container_name: firefox
+    ports:
+      - 3000:3000
+      - 3001:3001
+    environment:
+      - PUID=1000
+      - GUID=1000
+      - TZ=Asia/Kolkata
+    volumes:
+      - /home/tor/homelab/data/firefox:/config
+      - /mnt/vmshare/Downloads:/downloads
+    restart: unless-stopped

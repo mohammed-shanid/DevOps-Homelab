@@ -1,0 +1,1624 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; object-src 'none'; script-src resource: chrome:; connect-src https:; img-src https: data: blob: chrome:; style-src 'unsafe-inline';">
+    <meta name="color-scheme" content="light dark">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-l10n-id="newtab-page-title"></title>
+    <link rel="icon" type="image/png" href="chrome://branding/content/icon32.png"/>
+    <link rel="localization" href="branding/brand.ftl" />
+    <link rel="localization" href="toolkit/branding/brandings.ftl" />
+    <link rel="localization" href="browser/newtab/newtab.ftl" />
+    <link rel="localization" href="toolkit/global/mozMessageBar.ftl" />
+    <link rel="stylesheet" href="chrome://global/skin/design-system/tokens-brand.css">
+    <link rel="stylesheet" href="chrome://newtab/content/css/activity-stream.css" />
+  </head>
+  <!-- Cached: Sun, 12 Jul 2026 08:27:32 GMT -->
+  <body class="activity-stream">
+    <div id="header-asrouter-container" role="presentation"></div>
+    <div id="root">
+      <link rel="preload" as="image" href="chrome://newtab/content/data/content/assets/lists-empty-state-comet.svg"/><div class="nova-outer-wrapper"><div class="container nova-enabled"><aside class="sidebar-inline-start"><h1 class="logo-and-wordmark-wrapper"><div class="logo-and-wordmark" role="img" data-l10n-id="newtab-logo-and-wordmark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" class="logo-variation-small spin-ball-small" aria-hidden="true"><defs><linearGradient id="spin-ball-small-gradient-0" x1="309.4" y1="12.5" x2="368.1" y2="337.9" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff44f"></stop><stop offset=".3" stop-color="#ffd94d"></stop><stop offset=".7" stop-color="#ffb04b"></stop><stop offset="1" stop-color="#ff980e"></stop></linearGradient><linearGradient id="spin-ball-small-gradient-1" x1=".4" y1="397.2" x2="55.6" y2="397.2" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 -1 0 523.6)"><stop offset=".2" stop-color="#af16c0"></stop><stop offset=".9" stop-color="#00053d"></stop></linearGradient><linearGradient id="spin-ball-small-gradient-2" x1="283.1" y1="397.1" x2="338.1" y2="397.1" gradientUnits="userSpaceOnUse"><stop offset=".2" stop-color="#af16c0"></stop><stop offset=".9" stop-color="#00053d"></stop></linearGradient><linearGradient id="spin-ball-small-gradient-3" x1="112.2" y1="498.8" x2="226.6" y2="498.8" gradientUnits="userSpaceOnUse"><stop offset=".2" stop-color="#af16c0"></stop><stop offset=".9" stop-color="#00053d"></stop></linearGradient><linearGradient id="spin-ball-small-gradient-4" x1="39.6" y1="236.6" x2="134.2" y2="236.6" gradientUnits="userSpaceOnUse"><stop offset=".2" stop-color="#af16c0"></stop><stop offset=".9" stop-color="#00053d"></stop></linearGradient><linearGradient id="spin-ball-small-gradient-5" x1="204.5" y1="236.8" x2="299.2" y2="236.8" gradientUnits="userSpaceOnUse"><stop offset=".2" stop-color="#af16c0"></stop><stop offset=".9" stop-color="#00053d"></stop></linearGradient><linearGradient id="spin-ball-small-gradient-6" x1="112.6" y1="359.2" x2="226.1" y2="359.2" gradientUnits="userSpaceOnUse"><stop offset=".2" stop-color="#af16c0"></stop><stop offset=".9" stop-color="#00053d"></stop></linearGradient><linearGradient id="spin-ball-small-gradient-7" x1="-137.6" y1="457.7" x2="-0.8" y2="320.9" gradientUnits="userSpaceOnUse" gradientTransform="matrix(.7 .7 .7 -0.7 -226.3 307.5)"><stop offset="0" stop-color="#929497"></stop><stop offset="1" stop-color="#929497"></stop></linearGradient><linearGradient id="spin-ball-small-gradient-8" x1="-49.2" y1="116.8" x2="47" y2="-111.8" gradientUnits="userSpaceOnUse"><stop offset=".3" stop-color="#3a8ee6"></stop><stop offset=".7" stop-color="#9059ff"></stop><stop offset="1" stop-color="#c139e6"></stop></linearGradient><radialGradient id="spin-ball-small-gradient-9" cx="1.8" cy="-36.9" r="137.5" fx="1.8" fy="-36.9" gradientUnits="userSpaceOnUse"><stop offset=".2" stop-color="#9059ff" stop-opacity="0"></stop><stop offset="1" stop-color="#6e008b" stop-opacity=".6"></stop></radialGradient><radialGradient id="spin-ball-small-gradient-10" cx="-1767.7" cy="2465" r="2.9" fx="-1767.7" fy="2465" gradientUnits="userSpaceOnUse" gradientTransform="matrix(58.5 0 0 -58.7 103677 144814)"><stop offset=".1" stop-color="#ffe226"></stop><stop offset=".8" stop-color="#ff7139"></stop></radialGradient><radialGradient id="spin-ball-small-gradient-11" cx="-1788.7" cy="2446.5" r="3.1" fx="-1788.7" fy="2446.5" gradientUnits="userSpaceOnUse" gradientTransform="matrix(178.6 0 0 -159.8 319794 391016)"><stop offset=".1" stop-color="#fff44f"></stop><stop offset=".6" stop-color="#ff980e"></stop></radialGradient><linearGradient id="spin-ball-small-gradient-12" x1="420.4" y1="80.8" x2="71.7" y2="389" gradientUnits="userSpaceOnUse"><stop offset=".1" stop-color="#fff44f"></stop><stop offset=".6" stop-color="#ff980e"></stop><stop offset=".9" stop-color="#ff3647"></stop></linearGradient><linearGradient id="spin-ball-small-gradient-13" x1="475.9" y1="184.4" x2="50.9" y2="413.4" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffe743"></stop><stop offset=".3" stop-color="#ff980e"></stop><stop offset=".5" stop-color="#ff3750"></stop><stop offset=".8" stop-color="#eb0878"></stop><stop offset="1" stop-color="#e50080"></stop></linearGradient><radialGradient id="spin-ball-small-gradient-14" cx="291.4" cy="184" r="311.4" fx="291.4" fy="184" gradientUnits="userSpaceOnUse"><stop offset=".1" stop-color="#fff44f"></stop><stop offset=".6" stop-color="#ff980e"></stop><stop offset=".8" stop-color="#ff3647"></stop></radialGradient></defs><g class="spin-ball-small__spin"><path d="M438.4 180.4c-27.2-67.7-73.2-95-110.9-154.5c-1.9-3-3.8-6-5.6-9.2c-1-1.6-1.9-3.3-2.7-4.9c-1.5-3.1-2.8-6.3-3.6-9.6c0-0.3-0.2-0.6-0.5-0.6c-0.2 0-0.3 0-0.4 0c.2-0.1 .4-0.3 .6-0.4c0 0 .1-0.1 .1-0.1c-60.4 35.4-80.9 100.8-82.7 133.5c2.8-0.2 5.5-0.4 8.4-0.4c30.7 0 58.7 11.5 80 30.4c1.2 1.2 2.3 2.4 3.5 3.6c8.8 8.6 16.3 18.4 22.3 29.1c1.3 1 2.6 2 3.6 2.9c54.5 50.2 26 121.2 23.8 126.3c44.3-36.5 72.6-90.4 64.1-146.1Z" fill="url(#spin-ball-small-gradient-0)"></path><g class="spin-ball-small__classic" transform="translate(241.1,255.7) scale(.739424,.739424) translate(-169.3,-169.3)"><g data-name="Layer 1"><path d="M55.6 132.2l-0.2-60c0 0-9.6 1.5-15.6 3.1c-5.4 1.4-14.1 4.3-14.1 4.3c-14.2 22.8-23.2 49.2-25.3 77.5c0 0 5.4 7.6 8.3 11.1c4 4.9 11.5 12.4 11.5 12.4l35.4-48.4Z" fill="url(#spin-ball-small-gradient-1)"></path><path d="M283.1 132.1l35.4 48.5c0 0 7.2-7.7 11.4-13.3c4.4-5.9 8.2-12.2 8.2-12.2c-2.3-27.4-11.1-53-24.9-75.2c0 0-6.5-2.4-14.6-4.6c-7.5-2-15.3-3.1-15.3-3.1l-0.2 59.9Z" fill="url(#spin-ball-small-gradient-2)"></path><path d="M169.3 49.5l57.3-18.6c0 0-4.5-8.7-8.5-14.6c-4.6-6.9-8.5-11.5-8.5-11.5c-12.9-3.1-26.4-4.8-40.3-4.8c-13.9 0-27.8 1.7-40.9 5c0 0-5.5 7.5-8.4 11.9c-3.3 5.3-7.8 14-7.8 14l57.1 18.6Z" fill="url(#spin-ball-small-gradient-3)"></path><path d="M99 265.9l-57.1-18.5c0 0-1.5 10-1.9 15.2c-0.4 5.6-0.4 15.5-0.4 15.5c17.8 21.3 40.7 38.1 66.9 48.5c0 0 7.9-2.5 13.9-5.1c7-3.1 13.8-6.9 13.8-6.9l-35.2-48.7Z" fill="url(#spin-ball-small-gradient-4)"></path><path d="M239.7 265.9l-35.2 48.7c0 0 7.8 4 13.8 6.5c7.3 2.9 14.8 5.1 14.8 5.1c25.8-10.5 48.4-27.1 66.1-48.1c-0.1 0 .2-8.1-0.3-14.6c-0.6-7.3-2.1-16.1-2.1-16.1l-57.1 18.6Z" fill="url(#spin-ball-small-gradient-5)"></path><path d="M204.5 314.6c0-0.1 11.4-10.5 20.2-22.8c9.5-13.3 15-25.9 15-25.9l-35.3-48.5h-70.1l-35.3 48.5c0 0 6.3 14.3 14.9 25.9c9.1 12.4 20.3 22.8 20.3 22.8c0 0 15.2 4.3 35.2 4.3c18.5 0 35.1-4.4 35.1-4.4Z" fill="#dcdddd"></path><path d="M318.5 180.6c0 0-6.1-13.6-15.9-27c-8.6-11.8-19.5-21.5-19.5-21.5l-57 18.6l-21.7 66.7l35.3 48.5c0 0 15.5-1.7 29.6-6.3c15.1-5 27.5-12.2 27.5-12.2c0 0 9-13.9 14.9-31.9c5.9-18 6.8-34.9 6.8-34.9Z" fill="#d4d5d5"></path><path d="M20.2 180.6c0 0 5.9-13.6 15.2-26.2c9.2-12.5 20.1-22.2 20.1-22.2l57 18.5l21.7 66.7l-35.2 48.5c0 0-14.6-1.5-29.9-6.3c-14.9-4.7-27.3-12.2-27.3-12.2c0 0-9.1-12.9-14.9-31.7c-6.1-19.6-6.7-35.1-6.7-35.1Z" fill="#eeefef"></path><path d="M55.4 72.2c0 0-3 14.5-3 28.3c0 16.9 3.2 31.7 3.2 31.7l57 18.5l56.7-41.3v-59.9c0 0-12.7-7.4-28.8-12.6c-15-4.9-28.3-6-28.3-6c0 0-14 5-30.5 16.9c-16.2 11.6-26.3 24.4-26.3 24.4Z" fill="#f9f9f9"></path><path d="M169.3 109.4v-59.9c0 0 13.4-7.7 28.2-12.5c15.4-4.9 29.1-6.2 29.1-6.2c0 0 13.3 5 30.2 16.9c15.5 11 26.5 24.5 26.5 24.5c0 0 3 12.6 3 29.6c0 17-3.2 30.3-3.2 30.3l-57 18.6l-56.8-41.3Z" fill="#ececec"></path><path d="M134.2 217.4c.1 0-9.8-24.1-13-34c-3.3-10-8.6-32.7-8.6-32.7c0 0 17.7-15.2 27.3-22.3c9.3-6.8 29.4-19 29.4-19c0 0 20.6 12.8 30 19.6c8.7 6.2 26.8 21.7 26.8 21.7c0 0-5.5 22.4-9 33.4c-3.4 11-12.7 33.3-12.7 33.3c0 0-23.3 1.9-35.8 1.9c-11.7 0-34.3-1.9-34.3-1.9Z" fill="url(#spin-ball-small-gradient-6)"></path><path d="M204.5 314.6v-0.1l-0.1 .1c0-0.1-16.5 4.3-35.1 4.3c-19.9 0-35-4.3-35.1-4.3c0 0-6.8 3.8-13.8 6.9c-6 2.6-13.9 5.1-13.9 5.1c-1.6-0.6 26.4 12.1 62.8 12.1c22.6 0 44.1-4.5 63.8-12.5c0 0-7.6-2.2-14.8-5.1c-6.1-2.4-13.8-6.5-13.8-6.5h-0.1Z" fill="#cacbcb"></path><path d="M318.5 180.6c0 0-0.9 16.9-6.8 34.9c-5.9 18-14.9 31.9-14.9 31.9c0 0 1.6 8.8 2.1 16.1c.5 6.4 .3 14.5 .3 14.6c24.6-29.5 39.5-67.4 39.5-108.8c0-4.8-0.2-9.5-0.6-14.2c-0.1 .1-3.9 6.4-8.2 12.2c-4.2 5.6-11.4 13.3-11.4 13.3Z" fill="#cacbcb"></path><path d="M39.6 278.1c0 0 0-9.9 .4-15.5c.3-5.1 1.8-15.1 1.8-15.2c0 0-9.1-12.9-14.9-31.8c-6.1-19.6-6.7-35-6.7-35c0 0-7.5-7.6-11.5-12.4c-2.7-3.3-7.5-10.1-8.3-11.1c-0.2 4.1-0.4 8.1-0.4 12.2c0 62 33.3 116.2 82.9 145.7c-16.4-9.8-31.1-22.3-43.3-36.9Z" fill="#f3f4f4"></path><path d="M55.4 72.2c0 0 10.1-12.8 26.3-24.4c16.5-11.9 30.5-16.9 30.5-16.9c0 0 4.4-8.8 7.8-14c2.9-4.4 8.4-11.9 8.4-11.9c1.6-0.4 3.3-0.8 4.9-1.2c-45.3 9.8-83.8 37.8-107.6 75.8c1.4-0.4 9.2-3.1 14.1-4.3c5.9-1.6 15.5-3.1 15.6-3.1Z" fill="#f6f6f6"></path><path d="M226.6 30.9c0 0 13.3 4.9 30.2 16.9c15.5 10.9 26.5 24.4 26.5 24.4c0 0 7.8 1.1 15.3 3.1c8.1 2.2 14.5 4.6 14.6 4.6c-23.1-37-60-64.4-103.6-75.1c.1 .1 3.9 4.6 8.5 11.5c4 5.9 8.4 14.6 8.4 14.6Z" fill="#f1f1f1"></path><ellipse rx="123.4" ry="115.8" fill="url(#spin-ball-small-gradient-7)" transform="translate(-57.4,146.1) rotate(-45) translate(147.7,142.3)" style="isolation:isolate;mix-blend-mode:hard-light"></ellipse><path d="M338.7 169.3c0 93.5-75.9 169.4-169.4 169.4c-64.5-0.1-120.6-36.2-149.2-89.3c28.8 24.7 66.3 39.7 107.3 39.7c90.8 0 164.4-73.2 164.4-163.4c-0.1-38.6-13.5-74-35.9-101.9c49.5 29.5 82.7 83.7 82.7 145.5h.1Z" opacity=".6" fill="#696969" style="isolation:isolate;mix-blend-mode:hard-light"></path></g></g><g class="spin-ball-small__nova"><ellipse rx="130" ry="130" fill="url(#spin-ball-small-gradient-8)" transform="translate(240,263.6)"></ellipse><ellipse rx="130" ry="130" fill="url(#spin-ball-small-gradient-9)" transform="translate(240,263.6)"></ellipse></g><path d="M153.6 151.7c1.7 1.1 3.3 2.2 5 3.3c-5.5-19.1-5.7-39.4-0.7-58.7c-24.7 11.2-43.9 29-57.9 44.7c1.2 0 36.1-0.7 53.6 10.7Z" fill="url(#spin-ball-small-gradient-10)"></path><path d="M132.7 278.5c0 0 11.1-41.4 79.4-41.4c7.4 0 28.5-20.6 28.9-26.6c.4-5.9-43.7 18.4-90.2-3.5c-50.3-23.6-88.4 3.5-88.4 3.5c0 0 14.5 35.9 56.9 35.9c-4.4 39.2 16.4 85 66.6 109.1c1.2 .5 2.2 1.1 3.4 1.6c-29.4-15.2-53.6-43.8-56.6-78.6Z" fill="url(#spin-ball-small-gradient-11)"></path><path d="M2.2 262.7c18.5 109.6 117.8 193.2 230.6 196.4c104.4 3 171-57.6 198.6-116.7c17.8-38.2 30.1-100.7 7.5-162.2c0 0-0.1-0.2-0.1-0.2c0-0.2 0-0.3 0-0.3c0 .1 0 .2 0 .4c8.6 55.7-19.8 109.6-64 146.1l-0.1 .3c-86.3 70.2-168.8 42.4-185.5 31c-1.2-0.6-2.4-1.2-3.5-1.8c-50.3-24-71.1-69.8-66.6-109.1c-42.5 0-57-35.8-57-35.8c0 0 38.2-27.2 88.4-3.6c46.5 21.9 90.2 3.6 90.2 3.6c-0.1-2-41.9-18.6-58.2-34.7c-8.7-8.6-12.8-12.7-16.5-15.8c-2-1.7-4.1-3.3-6.2-4.7c-1.7-1.1-3.3-2.2-5-3.3c-17.5-11.4-52.4-10.8-53.5-10.7h-0.2c-9.5-12.1-8.8-51.9-8.3-60.2c-0.1-0.5-7.1 3.6-8 4.2c-8.4 6-16.3 12.8-23.5 20.1c-8.2 8.4-15.7 17.4-22.4 27c0 0 0 0 0 0c0 0 0 0 0 0c-15.5 21.9-26.4 46.6-32.3 72.8c-0.1 .5-8.6 37.8-4.4 57.2Z" fill="url(#spin-ball-small-gradient-12)"></path><path d="M462.7 166.4c-10.4-25.2-31.6-52.3-48.2-60.9c13.5 26.5 21.4 53.1 24.3 73c0-0.1 0 0 .1 .2c0 .1 0 .2 0 .3c22.7 61.4 10.3 123.9-7.5 162.1c-27.5 59.1-94.2 119.7-198.6 116.8c-112.7-3.2-212-86.9-230.6-196.5c-3.4-17.3 0-26 1.7-40.1c-2.1 10.9-2.8 14-3.9 33.2c0 .4 0 .8 0 1.2c0 132.7 107.6 240.3 240.3 240.3c118.9 0 217.6-86.3 236.9-199.6c.4-3.1 .7-6.2 1.1-9.3c4.8-41.2-0.5-84.5-15.6-120.7Z" fill="url(#spin-ball-small-gradient-13)"></path><path d="M350 200.4c-1-1-2.3-2-3.6-2.9c-0.5-0.4-0.9-0.8-1.5-1.1c-12.8-9.1-35.8-18-57.9-14.1c86.4 43.2 63.2 192-56.6 186.4c-10.6-0.5-21.2-2.5-31.2-6c-2.4-0.9-4.8-1.9-7.1-2.9c-1.4-0.7-2.7-1.3-4-2c0 .1 .1 .1 .1 .1c16.7 11.4 99.3 39.3 185.5-30.9l.1-0.3c2.2-5.1 30.7-76.1-23.8-126.3Z" fill="url(#spin-ball-small-gradient-14)"></path><path d="M438 180.2c-27.2-67.7-73.3-95-110.9-154.5c-1.9-3-3.8-6-5.7-9.2c-0.9-1.6-1.8-3.3-2.6-5c-1.6-3-2.8-6.2-3.6-9.5c0-0.3-0.2-0.6-0.5-0.6c-0.2-0.1-0.3-0.1-0.5 0c0 0-0.1 0-0.1 0c-0.1 .1-0.1 .1-0.2 .1c-9.3 4.5-64.4 91.7 10.3 166.4c8.8 8.6 16.3 18.4 22.3 29.1c1.3 1 2.6 2 3.6 3c54.5 50.2 26 121.2 23.8 126.2c44.3-36.4 72.6-90.3 64.1-146Z" opacity=".05" fill="#060605"></path></g></svg><div class="wordmark"></div></div></h1></aside><aside class="sidebar-inline-end"><article class="weather-widget col-4 small-widget weather-error-state"><div class="widget-title-bar"><div class="widget-title"><h3></h3></div><div class="weather-context-menu-wrapper"><moz-button class="weather-context-menu-button" data-l10n-id="newtab-menu-section-tooltip" iconSrc="chrome://global/skin/icons/more.svg" menuId="weather-widget-context-menu" type="ghost" size="small"></moz-button><panel-list id="weather-widget-context-menu"><panel-item data-l10n-id="newtab-weather-menu-change-temperature-units-fahrenheit"></panel-item><panel-item data-l10n-id="newtab-weather-menu-change-location"></panel-item><panel-item submenu="weather-size-submenu"><span data-l10n-id="newtab-widget-menu-change-size"></span><panel-list slot="submenu" id="weather-size-submenu"><panel-item type="checkbox" checked="" data-size="small" data-l10n-id="newtab-widget-size-small"></panel-item><panel-item type="checkbox" data-size="medium" data-l10n-id="newtab-widget-size-medium"></panel-item><panel-item type="checkbox" data-size="large" data-l10n-id="newtab-widget-size-large"></panel-item></panel-list></panel-item><panel-item data-l10n-id="newtab-widget-menu-hide"></panel-item><panel-item data-l10n-id="newtab-weather-menu-learn-more"></panel-item></panel-list></div></div><div class="weather-error"><span class="icon icon-info-warning"></span> <p data-l10n-id="newtab-weather-error-not-available"></p></div><div class="weather-container"></div></article></aside><main class="content"><div class="sticky-search-sentinel" aria-hidden="true"></div><div class="search-wrapper"><div class="search-inner-wrapper"></div></div><section class="top-sites" data-section-id="topsites"><div class="top-sites-list-wrapper"><ul role="group" aria-label="Shortcuts" class="top-sites-list" style="--top-sites-max-per-row:8"><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://www.wikipedia.org/" tabindex="0" draggable="true" data-is-sponsored-link="false" aria-label="Wikipedia" title="Wikipedia" data-l10n-args="{&quot;title&quot;:&quot;Wikipedia&quot;}"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="W"><div class="top-site-icon rich-icon" style="background-image:url(chrome://activity-stream/content/data/content/tippytop/images/wikipedia-org@2x.png)"></div></div></div><div class="title"><span class="title-label" dir="auto">Wikipedia</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Wikipedia&quot;}" class="context-menu-button icon" tabindex="0"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://www.youtube.com/" tabindex="-1" draggable="true" data-is-sponsored-link="false" aria-label="YouTube" title="YouTube" data-l10n-args="{&quot;title&quot;:&quot;YouTube&quot;}"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="Y"><div class="top-site-icon rich-icon" style="background-image:url(chrome://activity-stream/content/data/content/tippytop/images/youtube-com@2x.png)"></div></div></div><div class="title"><span class="title-label" dir="auto">YouTube</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;YouTube&quot;}" class="context-menu-button icon" tabindex="-1"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="http://ndtv.com/" tabindex="-1" draggable="true" data-is-sponsored-link="false" aria-label="NDTV" title="NDTV" data-l10n-args="{&quot;title&quot;:&quot;NDTV&quot;}"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="N"><div class="top-site-icon rich-icon" style="background-image:url(chrome://activity-stream/content/data/content/tippytop/images/ndtv@2x.png)"></div></div></div><div class="title"><span class="title-label" dir="auto">NDTV</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;NDTV&quot;}" class="context-menu-button icon" tabindex="-1"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://www.reddit.com/" tabindex="-1" draggable="true" data-is-sponsored-link="false" aria-label="Reddit" title="Reddit" data-l10n-args="{&quot;title&quot;:&quot;Reddit&quot;}"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="R"><div class="top-site-icon rich-icon" style="background-image:url(chrome://activity-stream/content/data/content/tippytop/images/reddit-com@2x.png)"></div></div></div><div class="title"><span class="title-label" dir="auto">Reddit</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Reddit&quot;}" class="context-menu-button icon" tabindex="-1"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer add-button "><div class="top-site-inner"><a class="top-site-button" tabindex="-1" draggable="true" data-is-sponsored-link="false" aria-label="" data-l10n-id="newtab-topsites-add-shortcut-title" data-l10n-args="{&quot;title&quot;:&quot;&quot;}"><div class="tile" aria-hidden="true"><div class="icon-wrapper"><div class=""></div></div></div><div class="title"><span class="title-label" dir="auto" data-l10n-id="newtab-topsites-add-shortcut-label"></span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div class="topsite-impression-observer"></div></div></li></ul></div><div class="edit-topsites-wrapper"></div></section><dialog class="report-content-form" id="dialog-report"><form action=""><moz-radio-group name="report" id="report-group" data-l10n-id="newtab-report-content-why-reporting-this" class="report-content-options" headingLevel="3"><moz-radio data-l10n-id="newtab-report-content-wrong-category" value="wrong_category"></moz-radio><moz-radio data-l10n-id="newtab-report-content-outdated" value="outdated"></moz-radio><moz-radio data-l10n-id="newtab-report-content-inappropriate-offensive" value="inappropriate_or_offensive"></moz-radio><moz-radio data-l10n-id="newtab-report-content-spam-misleading" value="spam_or_misleading"></moz-radio><moz-radio data-l10n-id="newtab-report-content-requires-payment-subscription" value="requires_payment_or_subscription"><a slot="support-link" is="moz-support-link" support-page="recommendations-firefox-new-tab#w_what-is-a-paywall" data-l10n-id="newtab-report-content-requires-payment-subscription-learn-more" rel="noreferrer" target="_blank"></a></moz-radio></moz-radio-group><moz-button-group><moz-button data-l10n-id="newtab-report-cancel" class="cancel-report-btn"></moz-button><moz-button type="primary" data-l10n-id="newtab-report-submit" class="submit-report-btn"></moz-button></moz-button-group></form></dialog><div class="discovery-stream ds-layout ds-layout-topsites"><div class="ds-column ds-column-12"><div class="ds-column-grid"><div></div></div></div><style data-styles="[[null]]"></style></div><div class="discovery-stream ds-layout ds-layout-widgets"><div class="ds-column ds-column-12"><div class="ds-column-grid"><div><div class="widgets-wrapper"><div class="widgets-section-container" data-overflow-1="" data-overflow-2="" data-overflow-3=""><div class="widgets-title-container"><div class="widgets-title-container-text"><div class="widgets-title-heading"><h1 data-l10n-id="newtab-widget-section-title"></h1><button id="toggle-widgets-size-button" type="button" class="widgets-expand-button" data-l10n-id="newtab-widget-section-maximize"></button></div></div><div class="widgets-title-actions"><div class="widgets-header-context-menu"><moz-button class="widgets-header-context-menu-button" data-l10n-id="newtab-widget-section-menu-button" iconSrc="chrome://global/skin/icons/more.svg" menuId="widgets-header-context-panel" type="ghost" size="default"></moz-button><panel-list id="widgets-header-context-panel"><panel-item data-l10n-id="newtab-widget-section-menu-hide-all"></panel-item><panel-item data-l10n-id="newtab-widget-section-menu-manage"></panel-item><panel-item data-l10n-id="newtab-widget-section-menu-learn-more"></panel-item></panel-list></div></div></div><div id="widgets-container" class="widgets-container" data-row-collapsed=""><div data-widget-id="sportsWidget" draggable="true" class="widget-wrapper col-4 medium-widget widget-draggable"><article class="sports widget col-4 medium-widget sports-intro"><video class="sports-intro-video" muted="" playsInline="" preload="auto" aria-hidden="true" tabindex="-1" poster="chrome://newtab/content/data/content/assets/worldcup-medium.png" src="chrome://newtab/content/data/content/assets/worldcup-medium.webm"></video><div class="sports-title-wrapper"><div></div><div class="sports-intro-wrapper"><h2 class="sports-intro-title" data-l10n-id="newtab-sports-widget-keep-tabs"></h2></div><div class="sports-context-menu-wrapper"><moz-button class="sports-context-menu-button" iconSrc="chrome://global/skin/icons/more.svg" menuId="sports-context-menu" type="ghost"></moz-button><panel-list id="sports-context-menu"><panel-item data-l10n-id="newtab-sports-widget-menu-follow-teams"></panel-item><panel-item data-l10n-id="newtab-sports-widget-menu-view-schedule"></panel-item><panel-item data-l10n-id="newtab-sports-widget-menu-view-upcoming"></panel-item><panel-item data-l10n-id="newtab-sports-widget-menu-view-results" disabled=""></panel-item><panel-item submenu="sports-size-submenu"><span data-l10n-id="newtab-widget-menu-change-size"></span><panel-list slot="submenu" id="sports-size-submenu"><panel-item type="checkbox" checked="" data-size="medium" data-l10n-id="newtab-widget-size-medium"></panel-item><panel-item type="checkbox" data-size="large" data-l10n-id="newtab-widget-size-large"></panel-item></panel-list></panel-item><panel-item submenu="sportsWidget-move-submenu"><span data-l10n-id="newtab-widget-menu-move"></span><panel-list slot="submenu" id="sportsWidget-move-submenu"><panel-item data-l10n-id="newtab-widget-menu-move-left" data-move-dir="left" disabled=""></panel-item><panel-item data-l10n-id="newtab-widget-menu-move-right" data-move-dir="right"></panel-item></panel-list></panel-item><panel-item data-l10n-id="newtab-widget-menu-hide"></panel-item><panel-item data-l10n-id="newtab-sports-widget-menu-learn-more"></panel-item></panel-list></div></div><div class="sports-body"><div class="sports-buttons-wrapper"><moz-button type="primary" size="small" data-l10n-id="newtab-sports-widget-view-matches" class="sports-view-matches"></moz-button><moz-button type="secondary" size="small" data-l10n-id="newtab-sports-widget-follow-teams" class="sports-follow-teams-btn"></moz-button></div><div class="sports-live-scores"></div></div></article></div><div data-widget-id="clocks" data-hidden-1="" draggable="true" class="widget-wrapper col-4 medium-widget widget-draggable"><article class="clocks-widget col-4 medium-widget has-no-labels" data-clock-count="4"><div class="widget-toolbar"><moz-button class="clocks-context-menu-button" data-l10n-id="newtab-clock-widget-menu-button" iconSrc="chrome://global/skin/icons/more.svg" menuId="clocks-widget-context-menu" type="icon ghost" size="small"></moz-button><panel-list id="clocks-widget-context-menu"><panel-item submenu="clocks-size-submenu"><span data-l10n-id="newtab-widget-menu-change-size"></span><panel-list slot="submenu" id="clocks-size-submenu"><panel-item type="checkbox" data-size="small" data-l10n-id="newtab-widget-size-small"></panel-item><panel-item type="checkbox" checked="" data-size="medium" data-l10n-id="newtab-widget-size-medium"></panel-item><panel-item type="checkbox" data-size="large" data-l10n-id="newtab-widget-size-large"></panel-item></panel-list></panel-item><panel-item submenu="clocks-move-submenu"><span data-l10n-id="newtab-widget-menu-move"></span><panel-list slot="submenu" id="clocks-move-submenu"><panel-item data-l10n-id="newtab-widget-menu-move-left" data-move-dir="left"></panel-item><panel-item data-l10n-id="newtab-widget-menu-move-right" data-move-dir="right"></panel-item></panel-list></panel-item><panel-item data-l10n-id="newtab-clock-widget-menu-edit"></panel-item><panel-item data-l10n-id="newtab-clock-widget-menu-switch-to-24h"></panel-item><panel-item data-l10n-id="newtab-clock-widget-menu-hide"></panel-item><panel-item data-l10n-id="newtab-clock-widget-menu-learn-more"></panel-item></panel-list></div><ul class="clocks-list"><li class="clocks-row has-inline-actions hides-time-on-inline-actions" data-timezone="Asia/Kolkata" aria-label="Kolkata, GMT+5:30" tabindex="0"><div class="clocks-meta" aria-hidden="true"><div class="clocks-label"><span class="clocks-city">CCU</span><span class="clocks-timezone">GMT+5:30</span></div></div><time class="clocks-time" aria-hidden="true"></time><div class="clocks-row-actions"><moz-button class="clocks-row-action-button clocks-row-edit-button" type="icon ghost" size="small" iconSrc="chrome://global/skin/icons/edit-outline.svg" data-l10n-id="newtab-clock-widget-button-edit-clock"></moz-button><moz-button class="clocks-row-action-button clocks-row-remove-button" type="icon ghost" size="small" iconSrc="chrome://global/skin/icons/delete.svg" data-l10n-id="newtab-clock-widget-button-remove-clock"></moz-button></div></li><li class="clocks-row has-inline-actions hides-time-on-inline-actions" data-timezone="Europe/Berlin" aria-label="Berlin, GMT+2" tabindex="0"><div class="clocks-meta" aria-hidden="true"><div class="clocks-label"><span class="clocks-city">BER</span><span class="clocks-timezone">GMT+2</span></div></div><time class="clocks-time" aria-hidden="true"></time><div class="clocks-row-actions"><moz-button class="clocks-row-action-button clocks-row-edit-button" type="icon ghost" size="small" iconSrc="chrome://global/skin/icons/edit-outline.svg" data-l10n-id="newtab-clock-widget-button-edit-clock"></moz-button><moz-button class="clocks-row-action-button clocks-row-remove-button" type="icon ghost" size="small" iconSrc="chrome://global/skin/icons/delete.svg" data-l10n-id="newtab-clock-widget-button-remove-clock"></moz-button></div></li><li class="clocks-row has-inline-actions hides-time-on-inline-actions" data-timezone="Australia/Sydney" aria-label="Sydney, GMT+10" tabindex="0"><div class="clocks-meta" aria-hidden="true"><div class="clocks-label"><span class="clocks-city">SYD</span><span class="clocks-timezone">GMT+10</span></div></div><time class="clocks-time" aria-hidden="true"></time><div class="clocks-row-actions"><moz-button class="clocks-row-action-button clocks-row-edit-button" type="icon ghost" size="small" iconSrc="chrome://global/skin/icons/edit-outline.svg" data-l10n-id="newtab-clock-widget-button-edit-clock"></moz-button><moz-button class="clocks-row-action-button clocks-row-remove-button" type="icon ghost" size="small" iconSrc="chrome://global/skin/icons/delete.svg" data-l10n-id="newtab-clock-widget-button-remove-clock"></moz-button></div></li><li class="clocks-row has-inline-actions hides-time-on-inline-actions" data-timezone="America/New_York" aria-label="New York, EDT" tabindex="0"><div class="clocks-meta" aria-hidden="true"><div class="clocks-label"><span class="clocks-city">NYC</span><span class="clocks-timezone">EDT</span></div></div><time class="clocks-time" aria-hidden="true"></time><div class="clocks-row-actions"><moz-button class="clocks-row-action-button clocks-row-edit-button" type="icon ghost" size="small" iconSrc="chrome://global/skin/icons/edit-outline.svg" data-l10n-id="newtab-clock-widget-button-edit-clock"></moz-button><moz-button class="clocks-row-action-button clocks-row-remove-button" type="icon ghost" size="small" iconSrc="chrome://global/skin/icons/delete.svg" data-l10n-id="newtab-clock-widget-button-remove-clock"></moz-button></div></li></ul></article></div><div data-widget-id="focusTimer" data-hidden-1="" data-hidden-2="" draggable="true" class="widget-wrapper col-4 medium-widget widget-draggable"><article class="focus-timer widget col-4 medium-widget  "><div class="newtab-widget-timer-notification-title-wrapper"><h2 data-l10n-id="newtab-widget-timer-notification-title"></h2><div class="focus-timer-context-menu-wrapper"><moz-button class="focus-timer-context-menu-button" iconSrc="chrome://global/skin/icons/more.svg" menuId="focus-timer-context-menu" type="ghost" data-l10n-id="newtab-widget-timer-menu-button"></moz-button><panel-list id="focus-timer-context-menu"><panel-item data-l10n-id="newtab-widget-timer-menu-notifications-on"></panel-item><panel-item data-l10n-id="newtab-widget-timer-menu-hide"></panel-item><panel-item submenu="focus-timer-size-submenu"><span data-l10n-id="newtab-widget-menu-change-size"></span><panel-list slot="submenu" id="focus-timer-size-submenu"><panel-item type="checkbox" data-size="small" data-l10n-id="newtab-widget-size-small" disabled=""></panel-item><panel-item type="checkbox" checked="" data-size="medium" data-l10n-id="newtab-widget-size-medium"></panel-item><panel-item type="checkbox" data-size="large" data-l10n-id="newtab-widget-size-large"></panel-item></panel-list></panel-item><panel-item submenu="focusTimer-move-submenu"><span data-l10n-id="newtab-widget-menu-move"></span><panel-list slot="submenu" id="focusTimer-move-submenu"><panel-item data-l10n-id="newtab-widget-menu-move-left" data-move-dir="left"></panel-item><panel-item data-l10n-id="newtab-widget-menu-move-right" data-move-dir="right"></panel-item></panel-list></panel-item><hr/><panel-item data-l10n-id="newtab-widget-timer-menu-learn-more"></panel-item></panel-list></div></div><div role="progress" class="progress-circle-wrapper"><div class="progress-circle-background"></div><div class="progress-circle focus-visible"></div><div class="progress-circle break-hidden"></div><div class="progress-circle-complete"></div><moz-button class="focus-timer-play-button" type="icon ghost" iconsrc="chrome://global/skin/media/play-fill.svg" data-l10n-id="newtab-widget-timer-start-aria" data-l10n-args="{&quot;minutes&quot;:25}"></moz-button></div><div class="focus-timer-body"><div class="focus-timer-time-slot"><div class="focus-timer-time-row"><moz-button class="focus-timer-minute-decrement" type="icon ghost" iconsrc="chrome://global/skin/icons/minus.svg" data-l10n-id="newtab-widget-timer-decrease-min" aria-controls="focus-timer-spinbutton" tabindex="-1"></moz-button><span id="focus-timer-spinbutton" class="focus-timer-spinbutton" role="spinbutton" aria-valuemin="1" aria-valuemax="99" aria-valuenow="25" data-l10n-id="newtab-widget-timer-spinbutton-name" data-l10n-args="{&quot;minutes&quot;:25}" contentEditable="true" tabindex="0">00:00</span><moz-button class="focus-timer-minute-increment" type="icon ghost" iconsrc="chrome://global/skin/icons/plus.svg" data-l10n-id="newtab-widget-timer-increase-min" aria-controls="focus-timer-spinbutton" tabindex="-1"></moz-button></div></div><div class="focus-timer-bottom-slot"><div class="focus-timer-mode-group" role="radiogroup" data-l10n-id="newtab-widget-timer-mode-group"><moz-button role="radio" aria-checked="true" tabindex="0" type="default" data-l10n-id="newtab-widget-timer-mode-focus"></moz-button><moz-button role="radio" aria-checked="false" tabindex="-1" type="ghost" data-l10n-id="newtab-widget-timer-mode-break"></moz-button></div></div></div></article></div><div data-widget-id="lists" data-hidden-1="" data-hidden-2="" data-hidden-3="" draggable="true" class="widget-wrapper col-4 medium-widget widget-draggable"><article class="lists widget col-4 medium-widget compact-widget  is-empty"><div class="lists-header"><span class="lists-title" data-l10n-id="newtab-widget-lists-name-default"></span><moz-button class="lists-panel-button" data-l10n-id="newtab-menu-section-tooltip" iconSrc="chrome://global/skin/icons/more.svg" menuId="lists-panel" type="ghost"></moz-button><panel-list id="lists-panel"><panel-item data-l10n-id="newtab-widget-lists-menu-edit"></panel-item><panel-item data-l10n-id="newtab-widget-lists-menu-create" class="create-list"></panel-item><panel-item data-l10n-id="newtab-widget-lists-menu-delete"></panel-item><hr/><panel-item data-l10n-id="newtab-widget-lists-menu-copy"></panel-item><panel-item submenu="lists-size-submenu"><span data-l10n-id="newtab-widget-menu-change-size"></span><panel-list slot="submenu" id="lists-size-submenu"><panel-item type="checkbox" checked="" data-size="medium" data-l10n-id="newtab-widget-size-medium"></panel-item><panel-item type="checkbox" data-size="large" data-l10n-id="newtab-widget-size-large"></panel-item></panel-list></panel-item><panel-item submenu="lists-move-submenu"><span data-l10n-id="newtab-widget-menu-move"></span><panel-list slot="submenu" id="lists-move-submenu"><panel-item data-l10n-id="newtab-widget-menu-move-left" data-move-dir="left"></panel-item><panel-item data-l10n-id="newtab-widget-menu-move-right" data-move-dir="right" disabled=""></panel-item></panel-list></panel-item><panel-item data-l10n-id="newtab-widget-menu-hide"></panel-item><panel-item class="learn-more" data-l10n-id="newtab-widget-lists-menu-learn-more"></panel-item></panel-list></div><div class="lists-add-action"><button class="lists-add-button" type="button"><span class="icon icon-add"></span><span class="button-label" data-l10n-id="newtab-widget-lists-button-add-item"></span></button><div class="add-task-container"><span class="icon icon-add "></span><input data-l10n-id="newtab-widget-lists-input-add-an-item2" data-l10n-attrs="placeholder,aria-label" class="add-task-input" type="text" maxLength="100" value=""/></div></div><div class="task-list-wrapper"><div class="empty-list"><img alt="" class="empty-list-illustration" height="66" src="chrome://newtab/content/data/content/assets/lists-empty-state-comet.svg" width="75"/></div></div></article></div></div><moz-button class="widgets-row-toggle" type="default" aria-controls="widgets-container" data-l10n-id="newtab-widget-section-show-more"></moz-button></div></div></div></div></div><style data-styles="[[null]]"></style></div><section class="
+          
+          ds-layout
+          " data-section-id="topstories"><div><div class="discovery-stream ds-layout "><div class="ds-column ds-column-12"><div class="ds-column-grid"><div><div class="ds-card-grid-container"><h2 class="ds-header" data-l10n-id="newtab-section-header-stories"></h2><div class="ds-card-grid     "><article class="ds-card sections-card-ui   ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.nytimes.com/2026/07/09/world/asia/india-film-censorship-satluj-diljit.html?utm_source=firefox-newtab-en-intl" title="Why India Has Spent Years Blocking One Movie’s Release" class="ds-card-link" data-is-sponsored-link="false" tabindex="0"><div class="img-wrapper"><picture class="ds-image
+       img 
+      
+      
+     loaded"><div class="broken-image"></div></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><h3 class="title clamp">Why India Has Spent Years Blocking One Movie’s Release</h3></div><div class="sections-card-footer"><div class="source-wrapper"><p class="source clamp">The New York Times</p></div></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Why India Has Spent Years Blocking One Movie’s Release&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card sections-card-ui   ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.huffpost.com/entry/fights-parents-teens-solutions_l_6a4cfc96e4b0c806bbef9a8f?utm_source=firefox-newtab-en-intl" title="3 Painfully Common Fights Parents Have With Teens (And How To Actually Resolve Them)" class="ds-card-link" data-is-sponsored-link="false" tabindex="-1"><div class="img-wrapper"><picture class="ds-image
+       img 
+      
+      
+     loaded"><div class="broken-image"></div></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><h3 class="title clamp">3 Painfully Common Fights Parents Have With Teens (And How To Actually Resolve Them)</h3></div><div class="sections-card-footer"><div class="source-wrapper"><p class="source clamp">HuffPost</p></div></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;3 Painfully Common Fights Parents Have With Teens (And How To Actually Resolve Them)&quot;}" class="context-menu-button icon" tabindex="-1"></button></div></div></div></article><article class="ds-card sections-card-ui   ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.vogue.in/content/do-spirulina-and-chlorella-actually-support-the-bodys-detox-process?utm_source=firefox-newtab-en-intl" title="Do Spirulina and Chlorella Actually Support the Body’s Detox Process?" class="ds-card-link" data-is-sponsored-link="false" tabindex="-1"><div class="img-wrapper"><picture class="ds-image
+       img 
+      
+      
+     loaded"><div class="broken-image"></div></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><h3 class="title clamp">Do Spirulina and Chlorella Actually Support the Body’s Detox Process?</h3></div><div class="sections-card-footer"><div class="source-wrapper"><p class="source clamp">Vogue India</p></div></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Do Spirulina and Chlorella Actually Support the Body’s Detox Process?&quot;}" class="context-menu-button icon" tabindex="-1"></button></div></div></div></article><article class="ds-card sections-card-ui   ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.scientificamerican.com/article/early-bird-night-owl-or-something-else-five-patterns-may-define-how-we-sleep/?utm_source=firefox-newtab-en-intl" title="Early Bird, Night Owl or Something Else? Five Patterns May Define How We Sleep" class="ds-card-link" data-is-sponsored-link="false" tabindex="-1"><div class="img-wrapper"><picture class="ds-image
+       img 
+      
+      
+     loaded"><div class="broken-image"></div></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><h3 class="title clamp">Early Bird, Night Owl or Something Else? Five Patterns May Define How We Sleep</h3></div><div class="sections-card-footer"><div class="source-wrapper"><p class="source clamp">Scientific American</p></div></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Early Bird, Night Owl or Something Else? Five Patterns May Define How We Sleep&quot;}" class="context-menu-button icon" tabindex="-1"></button></div></div></div></article><article class="ds-card sections-card-ui   ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.indiatoday.in/health/story/plant-based-vitamin-d3-approved-in-india-for-supplements-and-fortified-foods-2943182-2026-07-08?utm_source=firefox-newtab-en-intl" title="India Gets Its First Plant-Based Vitamin D3. Here’s Why That Matters Beyond Veganism" class="ds-card-link" data-is-sponsored-link="false" tabindex="-1"><div class="img-wrapper"><picture class="ds-image
+       img 
+      
+      
+     loaded"><div class="broken-image"></div></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><h3 class="title clamp">India Gets Its First Plant-Based Vitamin D3. Here’s Why That Matters Beyond Veganism</h3></div><div class="sections-card-footer"><div class="source-wrapper"><p class="source clamp">India Today</p></div></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;India Gets Its First Plant-Based Vitamin D3. Here’s Why That Matters Beyond Veganism&quot;}" class="context-menu-button icon" tabindex="-1"></button></div></div></div></article><article class="ds-card sections-card-ui   ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.news18.com/movies/bollywood/amitabh-bachchan-has-spent-rs-90-crore-to-buy-land-in-ayodhya-why-does-he-keep-investing-in-the-city-ws-kl-10197406.html?utm_source=firefox-newtab-en-intl" title="Amitabh Bachchan Has Spent Rs 90 Crore to Buy Land in Ayodhya; Why Does He Keep Investing in the City?" class="ds-card-link" data-is-sponsored-link="false" tabindex="-1"><div class="img-wrapper"><picture class="ds-image
+       img 
+      
+      
+     loaded"><div class="broken-image"></div></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><h3 class="title clamp">Amitabh Bachchan Has Spent Rs 90 Crore to Buy Land in Ayodhya; Why Does He Keep Investing in the City?</h3></div><div class="sections-card-footer"><div class="source-wrapper"><p class="source clamp">News18</p></div></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Amitabh Bachchan Has Spent Rs 90 Crore to Buy Land in Ayodhya; Why Does He Keep Investing in the City?&quot;}" class="context-menu-button icon" tabindex="-1"></button></div></div></div></article><article class="ds-card sections-card-ui   ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://apnews.com/article/modi-australia-india-albanese-uranium-32cbec58c8907d2b4aea934f2e241966?utm_source=firefox-newtab-en-intl" title="Australia Agrees to Sell Uranium to India, Ending a Long Stalemate" class="ds-card-link" data-is-sponsored-link="false" tabindex="-1"><div class="img-wrapper"><picture class="ds-image
+       img 
+      
+      
+     loaded"><div class="broken-image"></div></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><h3 class="title clamp">Australia Agrees to Sell Uranium to India, Ending a Long Stalemate</h3></div><div class="sections-card-footer"><div class="source-wrapper"><p class="source clamp">The Associated Press</p></div></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Australia Agrees to Sell Uranium to India, Ending a Long Stalemate&quot;}" class="context-menu-button icon" tabindex="-1"></button></div></div></div></article><article class="ds-card sections-card-ui   ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.parents.com/paw-patrol-helps-kids-build-leadership-skills-12013143?utm_source=firefox-newtab-en-intl" title="How ‘PAW Patrol’ Helps Kids Build Problem-Solving and Leadership Skills" class="ds-card-link" data-is-sponsored-link="false" tabindex="-1"><div class="img-wrapper"><picture class="ds-image
+       img 
+      
+      
+     loaded"><div class="broken-image"></div></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><h3 class="title clamp">How ‘PAW Patrol’ Helps Kids Build Problem-Solving and Leadership Skills</h3></div><div class="sections-card-footer"><div class="source-wrapper"><p class="source clamp">Parents</p></div></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;How ‘PAW Patrol’ Helps Kids Build Problem-Solving and Leadership Skills&quot;}" class="context-menu-button icon" tabindex="-1"></button></div></div></div></article><article class="ds-card sections-card-ui   ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.geekwire.com/2026/why-the-video-game-industry-may-be-sliding-toward-its-next-big-crash/?utm_source=firefox-newtab-en-intl" title="Why the Video Game Industry May Be Sliding Toward Its Next Big Crash" class="ds-card-link" data-is-sponsored-link="false" tabindex="-1"><div class="img-wrapper"><picture class="ds-image
+       img 
+      
+      
+     loaded"><div class="broken-image"></div></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><h3 class="title clamp">Why the Video Game Industry May Be Sliding Toward Its Next Big Crash</h3></div><div class="sections-card-footer"><div class="source-wrapper"><p class="source clamp">GeekWire</p></div></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Why the Video Game Industry May Be Sliding Toward Its Next Big Crash&quot;}" class="context-menu-button icon" tabindex="-1"></button></div></div></div></article><article class="ds-card sections-card-ui   ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.hindustantimes.com/lifestyle/art-culture/planning-a-bathroom-upgrade-try-these-5-architect-approved-design-ideas-that-give-it-luxurious-makeover-101783593774950.html?utm_source=firefox-newtab-en-intl" title="Planning a Bathroom Upgrade? Try These 5 Architect-Approved Design Ideas That Give It Luxurious Makeover" class="ds-card-link" data-is-sponsored-link="false" tabindex="-1"><div class="img-wrapper"><picture class="ds-image
+       img 
+      
+      
+     loaded"><div class="broken-image"></div></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><h3 class="title clamp">Planning a Bathroom Upgrade? Try These 5 Architect-Approved Design Ideas That Give It Luxurious Makeover</h3></div><div class="sections-card-footer"><div class="source-wrapper"><p class="source clamp">Hindustan Times</p></div></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Planning a Bathroom Upgrade? Try These 5 Architect-Approved Design Ideas That Give It Luxurious Makeover&quot;}" class="context-menu-button icon" tabindex="-1"></button></div></div></div></article><article class="ds-card sections-card-ui   ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.moneycontrol.com/news/business/personal-finance/itr-filing-how-india-compares-with-singapore-us-uk-and-japan-on-tax-returns-13968463.html?utm_source=firefox-newtab-en-intl" title="ITR Filing: How India Compares With Singapore, US, UK and Japan on Tax Returns" class="ds-card-link" data-is-sponsored-link="false" tabindex="-1"><div class="img-wrapper"><picture class="ds-image
+       img 
+      
+      
+     loaded"><div class="broken-image"></div></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><h3 class="title clamp">ITR Filing: How India Compares With Singapore, US, UK and Japan on Tax Returns</h3></div><div class="sections-card-footer"><div class="source-wrapper"><p class="source clamp">Money Control</p></div></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;ITR Filing: How India Compares With Singapore, US, UK and Japan on Tax Returns&quot;}" class="context-menu-button icon" tabindex="-1"></button></div></div></div></article><article class="ds-card sections-card-ui   ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.usatoday.com/graphics/interactives/penalty-kick-vs-free-vs-corner-2026-world-cup/?utm_source=firefox-newtab-en-intl" title="Penalty kicks could decide the World Cup. Here&#x27;s the science behind them" class="ds-card-link" data-is-sponsored-link="false" tabindex="-1"><div class="img-wrapper"><picture class="ds-image
+       img 
+      
+      
+     loaded"><div class="broken-image"></div></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><h3 class="title clamp">Penalty kicks could decide the World Cup. Here&#x27;s the science behind them</h3></div><div class="sections-card-footer"><div class="source-wrapper"><p class="source clamp">USA TODAY</p></div></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Penalty kicks could decide the World Cup. Here&#x27;s the science behind them&quot;}" class="context-menu-button icon" tabindex="-1"></button></div></div></div></article><article class="ds-card sections-card-ui   ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.aninews.in/news/sports/football/fifa-world-cup-2026-mbappes-effigy-burned-in-paraguay-after-wc-defeat-france-sports-minister-condemns-violence20260710001017?utm_source=firefox-newtab-en-intl" title="FIFA World Cup 2026: Mbappe’s Effigy Burned in Paraguay After WC Defeat; France Sports Minister Condemns “Violence”" class="ds-card-link" data-is-sponsored-link="false" tabindex="-1"><div class="img-wrapper"><picture class="ds-image
+       img 
+      
+      
+     loaded"><div class="broken-image"></div></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><h3 class="title clamp">FIFA World Cup 2026: Mbappe’s Effigy Burned in Paraguay After WC Defeat; France Sports Minister Condemns “Violence”</h3></div><div class="sections-card-footer"><div class="source-wrapper"><p class="source clamp">ANI</p></div></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;FIFA World Cup 2026: Mbappe’s Effigy Burned in Paraguay After WC Defeat; France Sports Minister Condemns “Violence”&quot;}" class="context-menu-button icon" tabindex="-1"></button></div></div></div></article><article class="ds-card sections-card-ui   ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.vox.com/good-medicine-newsletter/494789/apple-watch-oura-ring-fitbit-health-tracker-data?utm_source=firefox-newtab-en-intl" title="Health Trackers Offer a Ton of Data. Here Are the Metrics Doctors Want You to Pay Attention To" class="ds-card-link" data-is-sponsored-link="false" tabindex="-1"><div class="img-wrapper"><picture class="ds-image
+       img 
+      
+      
+     loaded"><div class="broken-image"></div></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><h3 class="title clamp">Health Trackers Offer a Ton of Data. Here Are the Metrics Doctors Want You to Pay Attention To</h3></div><div class="sections-card-footer"><div class="source-wrapper"><p class="source clamp">Vox</p></div></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Health Trackers Offer a Ton of Data. Here Are the Metrics Doctors Want You to Pay Attention To&quot;}" class="context-menu-button icon" tabindex="-1"></button></div></div></div></article><article class="ds-card sections-card-ui   ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.architecturaldigest.in/story/the-worlds-most-unconventional-travel-destinations-for-the-eccentric-traveller/?utm_source=firefox-newtab-en-intl" title="The World’s Most Unconventional Travel Destinations for the Eccentric Traveller" class="ds-card-link" data-is-sponsored-link="false" tabindex="-1"><div class="img-wrapper"><picture class="ds-image
+       img 
+      
+      
+     loaded"><div class="broken-image"></div></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><h3 class="title clamp">The World’s Most Unconventional Travel Destinations for the Eccentric Traveller</h3></div><div class="sections-card-footer"><div class="source-wrapper"><p class="source clamp">AD India</p></div></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;The World’s Most Unconventional Travel Destinations for the Eccentric Traveller&quot;}" class="context-menu-button icon" tabindex="-1"></button></div></div></div></article><article class="ds-card sections-card-ui   ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://m.economictimes.com/industry/services/education/financial-literacy-for-students-the-skills-indian-schools-still-arent-teaching/articleshow/132279887.cms?utm_source=firefox-newtab-en-intl" title="Financial Literacy for Students: The Skills Indian Schools Still Aren’t Teaching" class="ds-card-link" data-is-sponsored-link="false" tabindex="-1"><div class="img-wrapper"><picture class="ds-image
+       img 
+      
+      
+     loaded"><div class="broken-image"></div></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><h3 class="title clamp">Financial Literacy for Students: The Skills Indian Schools Still Aren’t Teaching</h3></div><div class="sections-card-footer"><div class="source-wrapper"><p class="source clamp">The Economic Times</p></div></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Financial Literacy for Students: The Skills Indian Schools Still Aren’t Teaching&quot;}" class="context-menu-button icon" tabindex="-1"></button></div></div></div></article><article class="ds-card sections-card-ui   ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.vogue.in/content/3-couples-on-life-after-their-multicultural-weddings-from-family-languages-to-festival-rituals?utm_source=firefox-newtab-en-intl" title="3 Couples on Life After Their Multicultural Weddings, From Family Languages to Festival Rituals" class="ds-card-link" data-is-sponsored-link="false" tabindex="-1"><div class="img-wrapper"><picture class="ds-image
+       img 
+      
+      
+     loaded"><div class="broken-image"></div></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><h3 class="title clamp">3 Couples on Life After Their Multicultural Weddings, From Family Languages to Festival Rituals</h3></div><div class="sections-card-footer"><div class="source-wrapper"><p class="source clamp">Vogue India</p></div></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;3 Couples on Life After Their Multicultural Weddings, From Family Languages to Festival Rituals&quot;}" class="context-menu-button icon" tabindex="-1"></button></div></div></div></article><article class="ds-card sections-card-ui   ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://time.com/article/2026/07/09/china-dalai-lama-succession-tibet/?utm_source=firefox-newtab-en-intl" title="China Is Already Trying to Control Who the Next Dalai Lama Will Be" class="ds-card-link" data-is-sponsored-link="false" tabindex="-1"><div class="img-wrapper"><picture class="ds-image
+       img 
+      
+      
+     loaded"><div class="broken-image"></div></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><h3 class="title clamp">China Is Already Trying to Control Who the Next Dalai Lama Will Be</h3></div><div class="sections-card-footer"><div class="source-wrapper"><p class="source clamp">Time</p></div></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;China Is Already Trying to Control Who the Next Dalai Lama Will Be&quot;}" class="context-menu-button icon" tabindex="-1"></button></div></div></div></article><article class="ds-card sections-card-ui   ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.nbcnews.com/sports/tennis/tennis-arthur-fery-wimbledon-semifinalist-stanford-rcna353659?utm_source=firefox-newtab-en-intl" title="Surprise Wimbledon Semifinalist Arthur Fery Developed His Game at Stanford University" class="ds-card-link" data-is-sponsored-link="false" tabindex="-1"><div class="img-wrapper"><picture class="ds-image
+       img 
+      
+      
+     loaded"><div class="broken-image"></div></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><h3 class="title clamp">Surprise Wimbledon Semifinalist Arthur Fery Developed His Game at Stanford University</h3></div><div class="sections-card-footer"><div class="source-wrapper"><p class="source clamp">NBC News</p></div></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Surprise Wimbledon Semifinalist Arthur Fery Developed His Game at Stanford University&quot;}" class="context-menu-button icon" tabindex="-1"></button></div></div></div></article><article class="ds-card sections-card-ui   ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.fortuneindia.com/business-news/indian-gamers-are-spending-more-on-shooters-and-strategy-titles-as-market-matures-report/147403?utm_source=firefox-newtab-en-intl" title="Indian Gamers Are Spending More on Shooters and Strategy Titles As Market Matures: Report" class="ds-card-link" data-is-sponsored-link="false" tabindex="-1"><div class="img-wrapper"><picture class="ds-image
+       img 
+      
+      
+     loaded"><div class="broken-image"></div></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><h3 class="title clamp">Indian Gamers Are Spending More on Shooters and Strategy Titles As Market Matures: Report</h3></div><div class="sections-card-footer"><div class="source-wrapper"><p class="source clamp">Fortune India</p></div></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Indian Gamers Are Spending More on Shooters and Strategy Titles As Market Matures: Report&quot;}" class="context-menu-button icon" tabindex="-1"></button></div></div></div></article><article class="ds-card sections-card-ui   ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.ndtv.com/travel/flight-delays-cancellations-amid-heavy-rain-your-rights-may-include-refunds-and-even-hotel-stays-11751216?utm_source=firefox-newtab-en-intl" title="Flight Delays, Cancellations Amid Heavy Rain? Your Rights May Include Refunds and Even Hotel Stays" class="ds-card-link" data-is-sponsored-link="false" tabindex="-1"><div class="img-wrapper"><picture class="ds-image
+       img 
+      
+      
+     loaded"><div class="broken-image"></div></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><h3 class="title clamp">Flight Delays, Cancellations Amid Heavy Rain? Your Rights May Include Refunds and Even Hotel Stays</h3></div><div class="sections-card-footer"><div class="source-wrapper"><p class="source clamp">NDTV</p></div></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Flight Delays, Cancellations Amid Heavy Rain? Your Rights May Include Refunds and Even Hotel Stays&quot;}" class="context-menu-button icon" tabindex="-1"></button></div></div></div></article><article class="ds-card sections-card-ui   ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.vox.com/advice/494526/photo-dump-friendship?utm_source=firefox-newtab-en-intl" title="The Lazy but Incredibly Effective Way to Stay in Touch With Friends" class="ds-card-link" data-is-sponsored-link="false" tabindex="-1"><div class="img-wrapper"><picture class="ds-image
+       img 
+      
+      
+     loaded"><div class="broken-image"></div></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><h3 class="title clamp">The Lazy but Incredibly Effective Way to Stay in Touch With Friends</h3></div><div class="sections-card-footer"><div class="source-wrapper"><p class="source clamp">Vox</p></div></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;The Lazy but Incredibly Effective Way to Stay in Touch With Friends&quot;}" class="context-menu-button icon" tabindex="-1"></button></div></div></div></article><article class="ds-card sections-card-ui   ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://restofworld.org/2026/data-centers-cities-communities-benefits/?utm_source=firefox-newtab-en-intl" title="Data Centers Should Benefit the Cities That Power Them" class="ds-card-link" data-is-sponsored-link="false" tabindex="-1"><div class="img-wrapper"><picture class="ds-image
+       img 
+      
+      
+     loaded"><div class="broken-image"></div></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><h3 class="title clamp">Data Centers Should Benefit the Cities That Power Them</h3></div><div class="sections-card-footer"><div class="source-wrapper"><p class="source clamp">Rest of World</p></div></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Data Centers Should Benefit the Cities That Power Them&quot;}" class="context-menu-button icon" tabindex="-1"></button></div></div></div></article><article class="ds-card sections-card-ui   ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.architecturaldigest.in/story/wall-art-how-this-kolkata-based-artist-is-bringing-nature-into-modern-interiors/?utm_source=firefox-newtab-en-intl" title="Wall Art: How This Kolkata-Based Artist Is Bringing Nature Into Modern Interiors" class="ds-card-link" data-is-sponsored-link="false" tabindex="-1"><div class="img-wrapper"><picture class="ds-image
+       img 
+      
+      
+     loaded"><div class="broken-image"></div></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><h3 class="title clamp">Wall Art: How This Kolkata-Based Artist Is Bringing Nature Into Modern Interiors</h3></div><div class="sections-card-footer"><div class="source-wrapper"><p class="source clamp">AD India</p></div></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="menu" aria-expanded="false" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Wall Art: How This Kolkata-Based Artist Is Bringing Nature Into Modern Interiors&quot;}" class="context-menu-button icon" tabindex="-1"></button></div></div></div></article></div></div></div><div><div class="ds-navigation ds-navigation-left-align "><ul></ul><a href="https://www.mozilla.org/privacy/firefox/#recommend-relevant-content" class="ds-navigation-privacy" data-is-sponsored-link="false"><span data-l10n-id="newtab-section-menu-privacy-notice"></span></a></div></div></div></div><style data-styles="[[null,{&quot;.ds-navigation&quot;:&quot;margin-block-start: -10px;&quot;}]]"></style></div></div></section><div class="discovery-stream ds-layout "><div class="ds-column ds-column-12"><div class="ds-column-grid"><div></div></div></div><style data-styles="[[null]]"></style></div></main></div><dialog class="confirmation-dialog" aria-labelledby="confirmation-dialog-title"><div class="modal"><section class="modal-message"></section><section class="button-group"><moz-button-group><moz-button type="ghost"></moz-button><moz-button type="destructive"></moz-button></moz-button-group></section></div></dialog><menu class="personalizeButtonWrapper nova-enabled"><span><moz-button class="open-customization-button" data-l10n-id="newtab-customize-panel-label" aria-haspopup="dialog" aria-expanded="false" iconsrc="chrome://global/skin/icons/edit-outline.svg" iconposition="end" type="default"></moz-button><dialog class="customize-menu nova-enabled" data-l10n-id="newtab-settings-dialog-label"><div class="customize-menu-content"><div class="close-button-wrapper"><moz-button id="close-button" type="icon ghost" data-l10n-id="newtab-custom-close-menu-button" iconsrc="chrome://global/skin/icons/close.svg"></moz-button></div><div class="home-section"><div class="wallpapers-section"><moz-toggle id="wallpapers-toggle" data-preference="newtabWallpapers.user.enabled" data-event-source="WALLPAPERS" data-l10n-id="newtab-wallpaper-toggle-title"></moz-toggle><div class="nova-enabled"><div class="category-header"></div><div role="grid" aria-label="Wallpaper category selection. Use arrow keys to navigate."><fieldset class="category-list"></fieldset></div></div></div><div class="settings-toggles"><span class="divider" role="separator"></span><div id="shortcuts-section" class="section"><moz-toggle id="shortcuts-toggle" pressed="" data-preference="feeds.topsites" data-event-source="TOP_SITES" data-l10n-id="newtab-custom-shortcuts-nova"><div slot="nested"><div class="more-info-top-wrapper"><div class="more-information"><moz-select id="row-selector" class="selector" name="row-count" data-preference="topSitesRows" value="1" aria-labelledby="custom-shortcuts-title" data-l10n-id="newtab-custom-row-description" inputLayout="inline-end"><moz-option value="1" label="1"></moz-option><moz-option value="2" label="2"></moz-option><moz-option value="3" label="3"></moz-option><moz-option value="4" label="4"></moz-option></moz-select></div></div></div></moz-toggle></div><span class="divider" role="separator"></span><div id="widgets-section" class="section"><moz-toggle id="widgets-system-toggle" pressed="" data-preference="widgets.enabled" data-event-source="WIDGETS_SYSTEM" data-l10n-id="newtab-custom-widget-section-toggle"><div slot="nested"><div class="more-info-widgets-wrapper"><div class="more-information"><div id="widgets-management-panel" class="widgets-mgmt-panel-container"><moz-box-button data-l10n-id="newtab-widget-manage-widget-button"></moz-box-button></div></div></div></div></moz-toggle></div><span class="divider" role="separator"></span><div id="pocket-section" class="section"><moz-toggle id="pocket-toggle" pressed="" data-preference="feeds.section.topstories" data-event-source="TOP_STORIES" data-l10n-id="newtab-recommended-stories-toggle"><div slot="nested"></div></moz-toggle></div></div></div><div class="manage-settings-footer"><button id="settings-link" class="external-link" data-l10n-id="newtab-custom-settings"></button></div></div></dialog></span></menu></div>
+    </div>
+    <div id="footer-asrouter-container" role="presentation"></div>
+    <script src="about:home?jscache"></script>
+    <script src="chrome://browser/content/contentTheme.js"></script>
+    <script src="resource://newtab/data/content/vendor.bundle.js"></script>
+    <script src="resource://newtab/data/content/activity-stream.bundle.js"></script>
+    <script src="resource://newtab/data/content/newtab-render.js"></script>
+    <script async type="module" src="chrome://global/content/elements/moz-toggle.mjs"></script>
+    <script async type="module" src="chrome://global/content/elements/moz-badge.mjs"></script>
+    <script async type="module" src="chrome://global/content/elements/moz-button.mjs"></script>
+    <script async type="module" src="chrome://global/content/elements/moz-button-group.mjs"></script>
+    <script async type="module" src="chrome://global/content/elements/moz-input-text.mjs"></script>
+    <script async type="module" src="chrome://global/content/elements/moz-input-search.mjs"></script>
+    <script async type="module" src="chrome://global/content/elements/moz-box-button.mjs"></script>
+    <script async type="module" src="chrome://global/content/elements/moz-message-bar.mjs"></script>
+    <script async type="module" src="chrome://global/content/elements/moz-radio-group.mjs"></script>
+    <script async type="module" src="chrome://global/content/elements/moz-select.mjs"></script>
+    <script async type="module" src="chrome://global/content/elements/moz-reorderable-list.mjs"></script>
+    <script async type="module" src="chrome://global/content/elements/panel-list.js"></script>
+    <script async type="module" src="chrome://global/content/elements/moz-support-link.mjs"></script>
+    <script async type="module" src="chrome://global/content/elements/moz-checkbox.mjs"></script>
+  </body>
+</html>
+window.__FROM_STARTUP_CACHE__ = true;
+window.__STARTUP_STATE__ = {
+	"TopSites": {
+		"initialized": true,
+		"rows": [
+			{
+				"isDefault": true,
+				"url": "https://www.wikipedia.org/",
+				"hostname": "wikipedia",
+				"sendAttributionRequest": false,
+				"label": "Wikipedia",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/wikipedia-org@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/wikipedia-org.ico",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.youtube.com/",
+				"hostname": "youtube",
+				"sendAttributionRequest": false,
+				"label": "YouTube",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/youtube-com@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/youtube-com.png",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "http://ndtv.com/",
+				"hostname": "ndtv",
+				"sendAttributionRequest": false,
+				"label": "NDTV",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/ndtv@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/ndtv.png",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.reddit.com/",
+				"hostname": "reddit",
+				"sendAttributionRequest": false,
+				"label": "Reddit",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/reddit-com@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/reddit-com.png",
+				"typedBonus": true
+			}
+		],
+		"editForm": null,
+		"showSearchShortcutsForm": false,
+		"searchShortcuts": [
+			{
+				"keyword": "@google",
+				"shortURL": "google",
+				"url": "https://google.com",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/google-com@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/google-com.ico"
+			},
+			{
+				"keyword": "@bing",
+				"shortURL": "bing",
+				"url": "https://bing.com",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/bing-com@2x.svg",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/bing-com.ico"
+			},
+			{
+				"keyword": "@duckduckgo",
+				"shortURL": "duckduckgo",
+				"url": "https://duckduckgo.com",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/duckduckgo-com@2x.svg",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/duckduckgo-com.ico"
+			},
+			{
+				"keyword": "@wikipedia",
+				"shortURL": "wikipedia",
+				"url": "https://wikipedia.org",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/wikipedia-org@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/wikipedia-org.ico"
+			}
+		],
+		"sov": {
+			"ready": false,
+			"positions": []
+		}
+	},
+	"App": {
+		"initialized": true,
+		"locale": "en-US",
+		"isForStartupCache": {
+			"App": true,
+			"TopSites": true,
+			"DiscoveryStream": true,
+			"Weather": true,
+			"Wallpaper": true
+		},
+		"customizeMenuVisible": false,
+		"customizePanelWallpaperCategory": null
+	},
+	"Ads": {
+		"initialized": false,
+		"lastUpdated": null,
+		"tiles": {},
+		"spocs": {},
+		"spocPlacements": {}
+	},
+	"Prefs": {
+		"initialized": true,
+		"values": {
+			"default.sites": "https://www.wikipedia.org/,https://www.youtube.com/,https://www.reddit.com/,https://addons.mozilla.org",
+			"feeds.topsites": true,
+			"hideTopSitesTitle": false,
+			"hideLogo": false,
+			"showSponsored": true,
+			"system.showSponsored": false,
+			"showSponsoredTopSites": true,
+			"mobileDownloadModal.enabled": false,
+			"mobileDownloadModal.variant-a": false,
+			"mobileDownloadModal.variant-b": false,
+			"mobileDownloadModal.variant-c": false,
+			"discoverystream.merino-provider.ohttp.enabled": false,
+			"unifiedAds.ohttp.enabled": true,
+			"unifiedAds.adsFeed.enabled": false,
+			"unifiedAds.tiles.enabled": true,
+			"unifiedAds.spocs.enabled": true,
+			"unifiedAds.endpoint": "https://ads.mozilla.org/",
+			"unifiedAds.blockedAds": "",
+			"system.showWeather": false,
+			"showWeather": true,
+			"system.showWeatherOptIn": false,
+			"discoverystream.optIn-region-weather-config": "DE,GB,FR,ES,IT,CH,AT,BE,IE,NL,PL,CZ,SE,SG,HU,SK,FI,DK,NO,PT",
+			"weather.optInDisplayed": true,
+			"weather.optInAccepted": false,
+			"weather.staticData.enabled": true,
+			"weather.query": "",
+			"weather.locationSearchEnabled": true,
+			"weather.temperatureUnits": "c",
+			"weather.display": "detailed",
+			"sports.worldCup.teamsEndpoint": "https://merino.services.mozilla.com/api/v1/wcs/teams",
+			"sports.worldCup.matchesEndpoint": "https://merino.services.mozilla.com/api/v1/wcs/matches",
+			"sports.worldCup.liveEndpoint": "https://merino.services.mozilla.com/api/v1/wcs/live",
+			"sports.worldCup.watchLiveEndpoint": "https://merino.services.mozilla.com/api/v1/wcs/watch-links",
+			"widgets.sportsWidget.pollIdleMs": 21600000,
+			"widgets.sportsWidget.pollMatchDayMs": 1800000,
+			"widgets.sportsWidget.pollLiveMs": 60000,
+			"widgets.sportsWidget.pollPregameLeadMs": 600000,
+			"images.smart": true,
+			"pocketCta": "{\"cta_button\":\"\",\"cta_text\":\"\",\"cta_url\":\"\",\"use_cta\":false}",
+			"showSearch": true,
+			"logowordmark.alwaysVisible": true,
+			"topSitesRows": 1,
+			"topSitesMaxSitesPerRow": 8,
+			"topSitesGroupedPins": false,
+			"telemetry": true,
+			"telemetry.structuredIngestion.endpoint": "https://incoming.telemetry.mozilla.org/submit",
+			"telemetry.privatePing.enabled": true,
+			"telemetry.surfaceId": "NEW_TAB_EN_INTL",
+			"telemetry.privatePing.redactNewtabPing.enabled": true,
+			"telemetry.privatePing.inferredInterests.enabled": false,
+			"section.highlights.includeVisited": true,
+			"section.highlights.includeBookmarks": true,
+			"section.highlights.includeDownloads": true,
+			"section.highlights.rows": 1,
+			"feeds.section.topstories": true,
+			"section.topstories.rows": 1,
+			"sectionOrder": "topsites,topstories,highlights",
+			"newtabWallpapers.enabled": true,
+			"newtabWallpapers.user.enabled": false,
+			"newtabWallpapers.customColor.enabled": true,
+			"newtabWallpapers.customWallpaper.enabled": true,
+			"newtabWallpapers.customWallpaper.uuid": "",
+			"newtabWallpapers.customWallpaper.uploadedPreviously": false,
+			"newtabWallpapers.customWallpaper.fileSize.enabled": false,
+			"newtabWallpapers.customWallpaper.fileSize": 0,
+			"newtabWallpapers.customWallpaper.theme": "",
+			"newtabAdSize.leaderboard": false,
+			"newtabAdSize.leaderboard.position": "3",
+			"newtabAdSize.billboard": false,
+			"newtabAdSize.billboard.position": "3",
+			"newtabAdSize.mediumRectangle": false,
+			"discoverystream.promoCard.enabled": false,
+			"discoverystream.promoCard.visible": true,
+			"discoverystream.sections.enabled": false,
+			"discoverystream.sections.personalization.enabled": true,
+			"discoverystream.sections.customizeMenuPanel.enabled": true,
+			"discoverystream.sections.cards.enabled": true,
+			"discoverystream.sections.contextualAds.enabled": false,
+			"discoverystream.sections.personalization.inferred.enabled": false,
+			"discoverystream.dailyBrief.sectionId": "top_stories_section",
+			"discoverystream.dailyBrief.enabled": false,
+			"discoverystream.sections.layout": "7-double-row-2-ad",
+			"discoverystream.shortcuts.personalization.enabled": true,
+			"discoverystream.shortcuts.force_log.enabled": false,
+			"discoverystream.attribution.enabled": false,
+			"discoverystream.sections.personalization.inferred.user.enabled": true,
+			"discoverystream.sections.personalization.inferred.model.override": "",
+			"discoverystream.reportAds.enabled": true,
+			"discoverystream.sections.following": "",
+			"discoverystream.sections.blocked": "",
+			"discoverystream.sections.interestPicker.enabled": false,
+			"discoverystream.sections.interestPicker.visibleSections": "",
+			"discoverystream.spoc-positions": "2,4,8,13,17,20",
+			"discoverystream.placements.contextualSpocs": "newtab_stories_1, newtab_stories_2, newtab_stories_3, newtab_stories_4, newtab_stories_5, newtab_stories_6",
+			"discoverystream.placements.contextualSpocs.counts": "1, 1, 1, 1, 1, 1",
+			"discoverystream.placements.contextualBanners": "",
+			"discoverystream.placements.contextualBanners.counts": "",
+			"discoverystream.placements.spocs": "newtab_stories_1, newtab_stories_2, newtab_stories_3, newtab_stories_4, newtab_stories_5, newtab_stories_6, newtab_stories_7, newtab_stories_8, newtab_stories_9, newtab_stories_10, newtab_stories_11, newtab_stories_12",
+			"discoverystream.placements.spocs.counts": "1,1,1,1,1,1,1,1,1,1,1,1",
+			"discoverystream.placements.tiles": "newtab_tile_1, newtab_tile_2, newtab_tile_3",
+			"discoverystream.placements.tiles.counts": "1, 1, 1",
+			"discoverystream.imageProxy.enabled": true,
+			"newtabWallpapers.highlightEnabled": false,
+			"newtabWallpapers.highlightDismissed": false,
+			"newtabWallpapers.highlightSeenCounter": 0,
+			"newtabWallpapers.highlightHeaderText": "",
+			"newtabWallpapers.highlightContentText": "",
+			"newtabWallpapers.highlightCtaText": "",
+			"newtabWallpapers.wallpaper": "",
+			"newtabWallpapers.initialWallpaper": "",
+			"sov.enabled": false,
+			"sov.name": "SOV-20251122215625",
+			"sov.frecency.exposure": false,
+			"sov.amp.allocation": "100, 100, 100",
+			"sov.frecency.allocation": "0, 0, 0",
+			"widgets.system.enabled": false,
+			"widgets.enabled": true,
+			"widgets.lists.enabled": true,
+			"widgets.lists.maxLists": 10,
+			"widgets.lists.maxListItems": 100,
+			"widgets.system.lists.enabled": false,
+			"widgets.lists.interaction": false,
+			"widgets.lists.badge.enabled": false,
+			"widgets.lists.badge.label": "",
+			"widgets.maximized": false,
+			"widgets.system.maximized": true,
+			"widgets.row.expanded": false,
+			"widgets.focusTimer.enabled": true,
+			"widgets.system.focusTimer.enabled": false,
+			"widgets.focusTimer.interaction": false,
+			"widgets.focusTimer.showSystemNotifications": false,
+			"widgets.weatherForecast.enabled": true,
+			"widgets.weather.enabled": true,
+			"widgets.system.weather.enabled": false,
+			"widgets.system.weatherForecast.enabled": false,
+			"widgets.weatherForecast.interaction": false,
+			"widgets.weather.size": "small",
+			"widgets.clocks.enabled": true,
+			"widgets.system.clocks.enabled": false,
+			"widgets.defaultSize": "medium",
+			"widgets.lists.size": "",
+			"widgets.focusTimer.size": "",
+			"widgets.sportsWidget.enabled": true,
+			"widgets.system.sportsWidget.enabled": false,
+			"widgets.sportsWidget.size": "",
+			"widgets.sportsWidget.live.enabled": false,
+			"widgets.sportsWidget.celebrations.enabled": false,
+			"widgets.sportsWidget.celebrations.windowMs": 86400000,
+			"widgets.sports.forceLiveDataTrustable": false,
+			"widgets.sportsWidget.interaction": false,
+			"widgets.clocks.size": "",
+			"widgets.clocks.hourFormat": "",
+			"widgets.clocks.zones": "",
+			"widgets.privacy.enabled": true,
+			"widgets.crossword.enabled": true,
+			"widgets.stocks.enabled": true,
+			"widgets.system.privacy.enabled": false,
+			"widgets.system.crossword.enabled": false,
+			"widgets.system.stocks.enabled": false,
+			"widgets.privacy.size": "",
+			"widgets.privacy.maxCount": 100,
+			"widgets.crossword.size": "",
+			"widgets.stocks.size": "",
+			"widgets.feedback.enabled": false,
+			"widgets.hideAllToast.enabled": false,
+			"widgets.order": "",
+			"improvesearch.noDefaultSearchTile": true,
+			"improvesearch.topSiteSearchShortcuts.searchEngines": "google",
+			"improvesearch.topSiteSearchShortcuts.havePinned": "",
+			"asrouter.devtoolsEnabled": false,
+			"discoverystream.flight.blocks": "{}",
+			"discoverystream.config": "{\"collapsible\":true,\"enabled\":true}",
+			"discoverystream.endpoints": "https://getpocket.cdn.mozilla.net/,https://firefox-api-proxy.cdn.mozilla.net/,https://spocs.getpocket.com/,https://merino.services.mozilla.com/,https://ads.mozilla.org/",
+			"discoverystream.region-basic-layout": false,
+			"discoverystream.spoc.impressions": "{}",
+			"discoverystream.endpointSpocsClear": "https://spocs.getpocket.com/user",
+			"discoverystream.rec.impressions": "{}",
+			"discoverystream.topicSelection.enabled": false,
+			"discoverystream.topicSelection.topics": "business, arts, food, health, finance, government, sports, tech, travel, education-science, society",
+			"discoverystream.topicSelection.selectedTopics": "",
+			"discoverystream.topicSelection.suggestedTopics": "business, arts, government",
+			"discoverystream.topicSelection.hasBeenUpdatedPreviously": false,
+			"discoverystream.topicSelection.onboarding.displayCount": 0,
+			"discoverystream.topicSelection.onboarding.maybeDisplay": true,
+			"discoverystream.topicSelection.onboarding.lastDisplayed": "",
+			"discoverystream.topicSelection.onboarding.displayTimeout": 0,
+			"discoverystream.topicSelection.onboarding.enabled": false,
+			"discoverystream.topicLabels.enabled": false,
+			"discoverystream.spocs.onDemand": false,
+			"discoverystream.spocs.startupCache.enabled": false,
+			"discoverystream.publisherFavicon.enabled": true,
+			"discoverystream.sections.clientLayout.enabled": false,
+			"support.url": "https://support.mozilla.org/1/firefox/152.0.4/Linux/en-US/new-tab",
+			"privacyInfo.url": "https://support.mozilla.org/1/firefox/152.0.4/Linux/en-US/sponsor-privacy",
+			"sectionsLearnMore.url": "https://support.mozilla.org/1/firefox/152.0.4/Linux/en-US/firefox-new-tab-personalization",
+			"caretBlinkCount": 5,
+			"caretBlinkTime": 1200,
+			"showSponsoredCheckboxes": true,
+			"activationWindow.variant": "",
+			"nova.enabled": true,
+			"selfLoading.enabled": true,
+			"remote-renderer.enabled": false,
+			"logo.variation": "",
+			"feeds.startupcacheinit": true,
+			"feeds.aboutpreferences": true,
+			"feeds.newtabinit": true,
+			"feeds.places": true,
+			"feeds.prefs": true,
+			"feeds.sections": true,
+			"feeds.section.highlights": false,
+			"feeds.system.topstories": true,
+			"feeds.systemtick": true,
+			"feeds.telemetry": true,
+			"feeds.favicon": true,
+			"feeds.system.topsites": true,
+			"feeds.discoverystreamfeed": true,
+			"feeds.sectionslayoutfeed": true,
+			"feeds.wallpaperfeed": true,
+			"feeds.weatherfeed": true,
+			"feeds.adsfeed": true,
+			"feeds.inferredpersonalizationfeed": true,
+			"feeds.smartshortcutsfeed": true,
+			"feeds.newtabattributionfeed": true,
+			"feeds.newtabmessaging": true,
+			"feeds.listsfeed": true,
+			"feeds.sportsfeed": true,
+			"feeds.privacyfeed": true,
+			"feeds.timerfeed": true,
+			"feeds.externalcomponentsfeed": true,
+			"isPrivateBrowsingEnabled": true,
+			"platform": "linux",
+			"region": "IN",
+			"fxa_endpoint": "https://accounts.firefox.com/",
+			"appUpdateChannel": "release",
+			"improvesearch.topSiteSearchShortcuts": true,
+			"mayHaveSponsoredTopSites": true,
+			"featureConfig": {
+				"customizationMenuEnabled": null,
+				"topSitesContileEnabled": true
+			},
+			"pocketConfig": {
+				"contileTopsitesPositions": "0,1,2",
+				"spocAdTypes": "",
+				"spocZoneIds": "",
+				"spocSiteId": "",
+				"widgetPositions": "",
+				"hybridLayout": false,
+				"hideCardBackground": false,
+				"fourCardLayout": false,
+				"newFooterSection": false,
+				"hideDescriptions": true,
+				"hideDescriptionsRegions": "",
+				"compactGrid": false,
+				"compactImages": false,
+				"imageGradient": false,
+				"titleLines": 3,
+				"descLines": 3,
+				"readTime": true,
+				"newSponsoredLabel": false,
+				"ctaButtonSponsors": "",
+				"ctaButtonVariant": "",
+				"regionStoriesConfig": "US,DE,CA,GB,IE,CH,AT,BE,IN,FR,IT,ES",
+				"merinoProviderEndpoint": "merino.services.mozilla.com",
+				"regionStoriesBlock": "",
+				"localeListConfig": "",
+				"regionSpocsConfig": "US,CA,DE,GB,FR,IT,ES",
+				"pocketFeedParameters": "",
+				"pocketStoriesHeadlineId": "newtab-section-header-stories"
+			},
+			"smartShortcutsConfig": {},
+			"widgetsConfig": {},
+			"trainhopConfig": {
+				"logo": {
+					"variation": "spin-ball-small"
+				},
+				"smartShortcuts": {
+					"eta": 0,
+					"telem": false,
+					"enabled": true,
+					"features": [
+						"thom",
+						"rece",
+						"freq",
+						"ctr"
+					],
+					"force_log": true,
+					"ctr_weight": 954,
+					"bias_weight": 0,
+					"click_bonus": 10,
+					"frec_weight": 0,
+					"freq_weight": 200,
+					"hour_weight": 0,
+					"open_weight": 0,
+					"rece_weight": 466,
+					"thom_weight": 181,
+					"unid_weight": 0,
+					"bmark_weight": 0,
+					"daily_weight": 0,
+					"refre_weight": 0,
+					"min_exp_clicks": 10,
+					"negative_prior": 1000,
+					"positive_prior": 1,
+					"sticky_numimps": 0,
+					"min_exp_impressions": 1000
+				},
+				"widgets": {
+					"order": "sportsWidget,clocks,weather,focusTimer,lists",
+					"enabled": true,
+					"listsSize": "medium",
+					"maximized": true,
+					"timerSize": "medium",
+					"clocksSize": "medium",
+					"weatherSize": "small",
+					"listsEnabled": true,
+					"timerEnabled": true,
+					"clocksEnabled": true,
+					"weatherEnabled": true,
+					"sportsWidgetSize": "medium",
+					"hideAllToastEnabled": true,
+					"sportsWidgetEnabled": true
+				},
+				"weather": {
+					"enabled": true,
+					"weatherOptInEnabled": false
+				},
+				"sports": {
+					"enabled": true,
+					"liveEnabled": true
+				},
+				"sportsCelebrations": {
+					"enabled": true
+				}
+			},
+			"adsBackendConfig": {},
+			"discoverystream.enabled": true,
+			"discoverystream.hardcoded-basic-layout": false,
+			"discoverystream.spocs-endpoint": "",
+			"discoverystream.spocs-endpoint-query": "",
+			"discoverystream.sections.personalization.inferred.debug.override": "",
+			"newNewtabExperience.colors": "#004CA4,#009E97,#7550C2,#B63B39,#C96A00,#CA9600,#CC527F"
+		}
+	},
+	"Dialog": {
+		"visible": false,
+		"data": {}
+	},
+	"Sections": [
+		{
+			"title": {
+				"id": "newtab-section-header-stories"
+			},
+			"rows": [],
+			"enabled": true,
+			"id": "topstories",
+			"pref": {
+				"titleString": {
+					"id": "home-prefs-recommended-by-header-generic"
+				},
+				"descString": {
+					"id": "home-prefs-recommended-by-description-generic"
+				},
+				"nestedPrefs": [],
+				"learnMore": {
+					"link": {
+						"href": "https://getpocket.com/firefox/new_tab_learn_more",
+						"id": "home-prefs-recommended-by-learn-more"
+					}
+				},
+				"feed": "feeds.section.topstories"
+			},
+			"eventSource": "TOP_STORIES",
+			"learnMore": {
+				"link": {
+					"href": "https://getpocket.com/firefox/new_tab_learn_more",
+					"message": {
+						"id": "newtab-pocket-learn-more"
+					}
+				}
+			},
+			"compactCards": false,
+			"rowsPref": "section.topstories.rows",
+			"maxRows": 4,
+			"availableLinkMenuOptions": [
+				"CheckBookmark",
+				"Separator",
+				"OpenInNewWindow",
+				"OpenInPrivateWindow",
+				"Separator",
+				"BlockUrl"
+			],
+			"emptyState": {
+				"message": {
+					"id": "newtab-empty-section-topstories-generic"
+				},
+				"icon": "check"
+			},
+			"shouldSendImpressionStats": true,
+			"dedupeFrom": [
+				"highlights"
+			],
+			"options": {},
+			"contextMenuOptions": [
+				"CheckBookmark",
+				"Separator",
+				"OpenInNewWindow",
+				"OpenInPrivateWindow",
+				"Separator",
+				"BlockUrl"
+			],
+			"initialized": false,
+			"dedupeConfigurations": [
+				{
+					"id": "topstories",
+					"dedupeFrom": [
+						"highlights"
+					]
+				}
+			]
+		},
+		{
+			"title": {
+				"id": "newtab-section-header-recent-activity"
+			},
+			"rows": [],
+			"enabled": false,
+			"id": "highlights",
+			"pref": {
+				"titleString": {
+					"id": "home-prefs-recent-activity-header"
+				},
+				"descString": {
+					"id": "home-prefs-recent-activity-description"
+				},
+				"nestedPrefs": [
+					{
+						"name": "section.highlights.includeVisited",
+						"titleString": "home-prefs-highlights-option-visited-pages"
+					},
+					{
+						"name": "section.highlights.includeBookmarks",
+						"titleString": "home-prefs-highlights-options-bookmarks"
+					},
+					{
+						"name": "section.highlights.includeDownloads",
+						"titleString": "home-prefs-highlights-option-most-recent-download"
+					}
+				],
+				"feed": "feeds.section.highlights"
+			},
+			"shouldHidePref": false,
+			"eventSource": "HIGHLIGHTS",
+			"icon": "chrome://global/skin/icons/highlights.svg",
+			"compactCards": true,
+			"rowsPref": "section.highlights.rows",
+			"maxRows": 4,
+			"emptyState": {
+				"message": {
+					"id": "newtab-empty-section-highlights"
+				},
+				"icon": "chrome://global/skin/icons/highlights.svg"
+			},
+			"shouldSendImpressionStats": false,
+			"options": {},
+			"initialized": false
+		}
+	],
+	"Messages": {
+		"isVisible": true,
+		"portID": "",
+		"messageData": {}
+	},
+	"Notifications": {
+		"showNotifications": false,
+		"toastCounter": 0,
+		"toastId": "",
+		"toastData": {},
+		"toastQueue": []
+	},
+	"Pocket": {
+		"pocketCta": {},
+		"waitingForSpoc": true
+	},
+	"InferredPersonalization": {
+		"initialized": false,
+		"lastUpdated": null,
+		"inferredInterests": {},
+		"coarseInferredInterests": {},
+		"coarsePrivateInferredInterests": {},
+		"debugFeatures": null,
+		"inferredTelemetrySettingsOverrides": {}
+	},
+	"DiscoveryStream": {
+		"config": {
+			"collapsible": true,
+			"enabled": true
+		},
+		"layout": [
+			{
+				"width": 12,
+				"components": [
+					{
+						"type": "TopSites",
+						"header": {
+							"title": {
+								"id": "newtab-section-header-topsites"
+							}
+						},
+						"properties": {}
+					},
+					{
+						"type": "Message",
+						"header": {
+							"title": {
+								"id": "newtab-section-header-stories"
+							},
+							"subtitle": "",
+							"link_text": {
+								"id": "newtab-pocket-learn-more"
+							},
+							"link_url": "",
+							"icon": "chrome://global/skin/icons/pocket.svg"
+						},
+						"styles": {
+							".ds-message": "margin-block-end: -20px"
+						}
+					},
+					{
+						"type": "CardGrid",
+						"properties": {
+							"items": 24,
+							"hybridLayout": false,
+							"hideCardBackground": false,
+							"fourCardLayout": false,
+							"compactGrid": false,
+							"ctaButtonSponsors": [
+								""
+							],
+							"ctaButtonVariant": ""
+						},
+						"widgets": {
+							"positions": [],
+							"data": [
+								{
+									"type": "TopicsWidget"
+								}
+							]
+						},
+						"cta_variant": "link",
+						"header": {
+							"title": ""
+						},
+						"placement": {
+							"name": "newtab_spocs",
+							"ad_types": [
+								3617
+							],
+							"zone_ids": [
+								217758,
+								217995
+							]
+						},
+						"feed": {
+							"embed_reference": null,
+							"url": "https://merino.services.mozilla.com/api/v1/curated-recommendations"
+						},
+						"spocs": {
+							"probability": 1,
+							"positions": [
+								{
+									"index": 2
+								},
+								{
+									"index": 4
+								},
+								{
+									"index": 8
+								},
+								{
+									"index": 13
+								},
+								{
+									"index": 17
+								},
+								{
+									"index": 20
+								}
+							]
+						}
+					},
+					{
+						"type": "Navigation",
+						"newFooterSection": false,
+						"properties": {
+							"alignment": "left-align",
+							"extraLinks": [
+								{
+									"name": "Career",
+									"url": "https://getpocket.com/explore/career?utm_source=pocket-newtab"
+								},
+								{
+									"name": "Technology",
+									"url": "https://getpocket.com/explore/technology?utm_source=pocket-newtab"
+								}
+							],
+							"privacyNoticeURL": {
+								"url": "https://www.mozilla.org/privacy/firefox/#recommend-relevant-content",
+								"title": {
+									"id": "newtab-section-menu-privacy-notice"
+								}
+							}
+						},
+						"styles": {
+							".ds-navigation": "margin-block-start: -10px;"
+						}
+					}
+				]
+			}
+		],
+		"topicsLoading": false,
+		"feeds": {
+			"data": {
+				"https://merino.services.mozilla.com/api/v1/curated-recommendations": {
+					"lastUpdated": 1783696479834,
+					"personalized": false,
+					"sectionsEnabled": false,
+					"data": {
+						"settings": {},
+						"sections": [],
+						"interestPicker": {},
+						"recommendations": [
+							{
+								"id": "0187dabe-238a-434a-83b4-9323dfe642a4",
+								"scheduled_corpus_item_id": "bc9854cc-7f1d-4ec3-a665-b4e606b6e19f",
+								"corpus_item_id": "0187dabe-238a-434a-83b4-9323dfe642a4",
+								"features": {
+									"t_arts": 1
+								},
+								"excerpt": "Censors demanded 127 cuts to the film that explores a dark period of police brutality in Punjab state. Filmmakers say it’s the latest, chilling example of entrenched censorship.",
+								"icon_src": "https://prod-images.merino.prod.webservices.mozgcp.net/favicons/68d17fe3b579e967803b3bfa086047106eb7c67ba2d64149f606457e2df5437c_3148.png",
+								"isTimeSensitive": true,
+								"publisher": "The New York Times",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/da9c5340-f405-419b-8486-64dab3eebd0e.jpeg",
+								"received_rank": 0,
+								"recommended_at": 1783696479646,
+								"title": "Why India Has Spent Years Blocking One Movie’s Release",
+								"topic": "arts",
+								"url": "https://www.nytimes.com/2026/07/09/world/asia/india-film-censorship-satluj-diljit.html?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "79565bae-4903-4725-903a-71a9643c3248",
+								"scheduled_corpus_item_id": "7e577288-7167-41f2-b6c7-5dfd8efb7ea4",
+								"corpus_item_id": "79565bae-4903-4725-903a-71a9643c3248",
+								"features": {
+									"t_society-parenting": 1
+								},
+								"excerpt": "Fights? Between parents and teenagers? Groundbreaking.",
+								"icon_src": "https://prod-images.merino.prod.webservices.mozgcp.net/favicons/8a5cf405c8e7c3f51599fffb8036c6a1ac1f212ed01082cd9b7dc2fe908f240b_201614.ico",
+								"isTimeSensitive": false,
+								"publisher": "HuffPost",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/fffbc454-d707-44d0-806f-009c7bd189ae.jpeg",
+								"received_rank": 1,
+								"recommended_at": 1783696479646,
+								"title": "3 Painfully Common Fights Parents Have With Teens (And How To Actually Resolve Them)",
+								"topic": "society-parenting",
+								"url": "https://www.huffpost.com/entry/fights-parents-teens-solutions_l_6a4cfc96e4b0c806bbef9a8f?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "b1ea72dc-6690-42f3-89b4-49b6752dbe46",
+								"scheduled_corpus_item_id": "c2f7bab7-82ab-429e-8124-5e017748b2c3",
+								"corpus_item_id": "b1ea72dc-6690-42f3-89b4-49b6752dbe46",
+								"features": {
+									"t_health": 1
+								},
+								"excerpt": "Two superfoods your diet might be missing",
+								"icon_src": null,
+								"isTimeSensitive": false,
+								"publisher": "Vogue India",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/bbccc1ca-550d-4bbb-8939-d8e6530447d4.jpeg",
+								"received_rank": 2,
+								"recommended_at": 1783696479646,
+								"title": "Do Spirulina and Chlorella Actually Support the Body’s Detox Process?",
+								"topic": "health",
+								"url": "https://www.vogue.in/content/do-spirulina-and-chlorella-actually-support-the-bodys-detox-process?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "66a75767-c37d-4bf9-a929-d3c374ce1290",
+								"scheduled_corpus_item_id": "9ae37707-eae2-41f4-83e1-cb8047eaa329",
+								"corpus_item_id": "66a75767-c37d-4bf9-a929-d3c374ce1290",
+								"features": {
+									"t_society": 1
+								},
+								"excerpt": "New research identifies five distinct sleep subtypes, revealing links between brain patterns, behavior and health",
+								"icon_src": null,
+								"isTimeSensitive": false,
+								"publisher": "Scientific American",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/7d1e56be-053e-42c5-9113-a874bd397ff1.jpeg",
+								"received_rank": 3,
+								"recommended_at": 1783696479646,
+								"title": "Early Bird, Night Owl or Something Else? Five Patterns May Define How We Sleep",
+								"topic": "society",
+								"url": "https://www.scientificamerican.com/article/early-bird-night-owl-or-something-else-five-patterns-may-define-how-we-sleep/?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "7a2d2d46-efeb-4e54-8238-840be7ae615f",
+								"scheduled_corpus_item_id": "52f30454-ab06-4777-bb71-bec673e131c8",
+								"corpus_item_id": "7a2d2d46-efeb-4e54-8238-840be7ae615f",
+								"features": {
+									"t_food": 1
+								},
+								"excerpt": "FSSAI has approved India’s first plant-source vitamin D3 for supplements, fortified foods and nutraceuticals. The move widens options for vegetarian and vegan consumers as vitamin D deficiency remains common.",
+								"icon_src": null,
+								"isTimeSensitive": false,
+								"publisher": "India Today",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/98ec22dc-9503-4f2d-a2cd-e259a0803d42.jpeg",
+								"received_rank": 4,
+								"recommended_at": 1783696479646,
+								"title": "India Gets Its First Plant-Based Vitamin D3. Here’s Why That Matters Beyond Veganism",
+								"topic": "food",
+								"url": "https://www.indiatoday.in/health/story/plant-based-vitamin-d3-approved-in-india-for-supplements-and-fortified-foods-2943182-2026-07-08?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "f1656cc3-1028-44e6-883e-604d21a6d097",
+								"scheduled_corpus_item_id": "b4f2b616-9d96-481c-a133-26e1ce31b720",
+								"corpus_item_id": "f1656cc3-1028-44e6-883e-604d21a6d097",
+								"features": {
+									"t_government": 1
+								},
+								"excerpt": "Available records and statements from those involved point to a combination of personal, cultural and long-term investment reasons.",
+								"icon_src": null,
+								"isTimeSensitive": false,
+								"publisher": "News18",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/72b944dd-1838-4b22-b071-3c208564d869.jpeg",
+								"received_rank": 5,
+								"recommended_at": 1783696479646,
+								"title": "Amitabh Bachchan Has Spent Rs 90 Crore to Buy Land in Ayodhya; Why Does He Keep Investing in the City?",
+								"topic": "government",
+								"url": "https://www.news18.com/movies/bollywood/amitabh-bachchan-has-spent-rs-90-crore-to-buy-land-in-ayodhya-why-does-he-keep-investing-in-the-city-ws-kl-10197406.html?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "a52db25c-4eb7-4d05-9cc6-bd8fc25c5db8",
+								"scheduled_corpus_item_id": "b5b1b5f0-0b5a-4df0-a953-dc526590d4ce",
+								"corpus_item_id": "a52db25c-4eb7-4d05-9cc6-bd8fc25c5db8",
+								"features": {
+									"t_business": 1
+								},
+								"excerpt": "Australia has agreed to sell uranium to India for peaceful purposes. The deal was announced by Australia's Prime Minister Anthony Albanese and India's Prime Minister Narendra Modi after a meeting in Melbourne.",
+								"icon_src": "https://prod-images.merino.prod.webservices.mozgcp.net/favicons/23573dba0752d2357dbff63e4d0d17a3d4c25073b3c0744adcc8e705f25b7f2f_2907.oct",
+								"isTimeSensitive": true,
+								"publisher": "The Associated Press",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/43bbb000-fb11-4121-8fae-f62f3b1a5bbd.jpeg",
+								"received_rank": 6,
+								"recommended_at": 1783696479646,
+								"title": "Australia Agrees to Sell Uranium to India, Ending a Long Stalemate",
+								"topic": "business",
+								"url": "https://apnews.com/article/modi-australia-india-albanese-uranium-32cbec58c8907d2b4aea934f2e241966?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "50eab39c-21d8-4581-ab73-da02fba1cadf",
+								"scheduled_corpus_item_id": "1ad9d16f-c875-4f3b-9b86-181def44217e",
+								"corpus_item_id": "50eab39c-21d8-4581-ab73-da02fba1cadf",
+								"features": {
+									"t_society-parenting": 1
+								},
+								"excerpt": "‘PAW Patrol’ is considered one of the most entertaining shows for preschoolers. But the life lessons in the show are just as crucial to your little one’s development.",
+								"icon_src": "https://prod-images.merino.prod.webservices.mozgcp.net/favicons/89d58673da00456f1634d3fc142b36943ce0fbe354c03171d2fb8d3a495f8ab1_2308.oct",
+								"isTimeSensitive": false,
+								"publisher": "Parents",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/6a0a90fb-4f02-405c-95fc-5a53e9d969d3.jpeg",
+								"received_rank": 7,
+								"recommended_at": 1783696479646,
+								"title": "How ‘PAW Patrol’ Helps Kids Build Problem-Solving and Leadership Skills",
+								"topic": "society-parenting",
+								"url": "https://www.parents.com/paw-patrol-helps-kids-build-leadership-skills-12013143?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "77f394b0-ca35-492d-a136-b7bc1b640e90",
+								"scheduled_corpus_item_id": "6cd21938-a1dc-4701-9aef-ca1249206702",
+								"corpus_item_id": "77f394b0-ca35-492d-a136-b7bc1b640e90",
+								"features": {
+									"t_hobbies": 1
+								},
+								"excerpt": "The last couple of weeks have served as a capstone to what’s become a bad few years for the international video game industry. Now it appears the larger sector is headed directly into some significant crash, as several unsustainable practices all seem to be approaching a crisis point at once.",
+								"icon_src": null,
+								"isTimeSensitive": false,
+								"publisher": "GeekWire",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/108e4b45-69af-4917-a72b-85f3fb86d724.jpeg",
+								"received_rank": 8,
+								"recommended_at": 1783696479646,
+								"title": "Why the Video Game Industry May Be Sliding Toward Its Next Big Crash",
+								"topic": "hobbies",
+								"url": "https://www.geekwire.com/2026/why-the-video-game-industry-may-be-sliding-toward-its-next-big-crash/?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "fec56ed6-ade7-4c29-9305-96dcb36ca487",
+								"scheduled_corpus_item_id": "9a50f4a7-6340-444f-9020-4dc3911c03bf",
+								"corpus_item_id": "fec56ed6-ade7-4c29-9305-96dcb36ca487",
+								"features": {
+									"t_home": 1
+								},
+								"excerpt": "If your bathroom is looking basic, try these 5 design upgrades to make it feel calm, open and luxurious.",
+								"icon_src": "https://prod-images.merino.prod.webservices.mozgcp.net/favicons/f6e337a4d6af6278eaae9aeba4d94daee40cc417985c456bda8b40505423f87a_1808.png",
+								"isTimeSensitive": false,
+								"publisher": "Hindustan Times",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/bc17d561-56f4-420d-ba0c-42e84cd27a8e.jpeg",
+								"received_rank": 9,
+								"recommended_at": 1783696479646,
+								"title": "Planning a Bathroom Upgrade? Try These 5 Architect-Approved Design Ideas That Give It Luxurious Makeover",
+								"topic": "home",
+								"url": "https://www.hindustantimes.com/lifestyle/art-culture/planning-a-bathroom-upgrade-try-these-5-architect-approved-design-ideas-that-give-it-luxurious-makeover-101783593774950.html?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "88fcb718-77a8-4997-b009-b18b10af443f",
+								"scheduled_corpus_item_id": "2261f4d3-3983-435a-98a4-7a97a7b6fea5",
+								"corpus_item_id": "88fcb718-77a8-4997-b009-b18b10af443f",
+								"features": {
+									"t_finance": 1
+								},
+								"excerpt": "ITR filing has come a long way in India. Pre-filled data and AIS integration have made it faster and simpler over the years.",
+								"icon_src": "https://prod-images.merino.prod.webservices.mozgcp.net/favicons/e6df937e99ab76f0aa140b0bf2ef8cbb926724bae94318033134ae41cede818e_1320.oct",
+								"isTimeSensitive": false,
+								"publisher": "Money Control",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/3968c882-7891-479b-b742-6f9e203d9cad.jpeg",
+								"received_rank": 10,
+								"recommended_at": 1783696479646,
+								"title": "ITR Filing: How India Compares With Singapore, US, UK and Japan on Tax Returns",
+								"topic": "finance",
+								"url": "https://www.moneycontrol.com/news/business/personal-finance/itr-filing-how-india-compares-with-singapore-us-uk-and-japan-on-tax-returns-13968463.html?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "11baf66a-36fd-4f66-97f9-58473285f513",
+								"scheduled_corpus_item_id": "fbe106d2-10a8-4caf-8e86-1627aede51f1",
+								"corpus_item_id": "11baf66a-36fd-4f66-97f9-58473285f513",
+								"features": {
+									"t_education-science": 1
+								},
+								"excerpt": "From Argentina's Messi to Colombia, Switzerland, and Egypt, penalties scored - and missed - have been critical in the World Cup.",
+								"icon_src": "https://prod-images.merino.prod.webservices.mozgcp.net/favicons/54bdc40da47673622e277d680dd6e45ba37430f47274ec27dc4caca7413a1139_1627.png",
+								"isTimeSensitive": true,
+								"publisher": "USA TODAY",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/f5b6395e-eaae-483d-9eb5-b4fca86e1dd0.jpeg",
+								"received_rank": 11,
+								"recommended_at": 1783696479646,
+								"title": "Penalty kicks could decide the World Cup. Here's the science behind them",
+								"topic": "education-science",
+								"url": "https://www.usatoday.com/graphics/interactives/penalty-kick-vs-free-vs-corner-2026-world-cup/?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "29bcc059-52b1-451f-a227-6ad374587649",
+								"scheduled_corpus_item_id": "b207d1df-6f56-4026-ad53-5a3a90248b81",
+								"corpus_item_id": "29bcc059-52b1-451f-a227-6ad374587649",
+								"features": {
+									"t_sports": 1
+								},
+								"excerpt": "Kylian Mbappe has become the face of Paraguay's heartbreak after an effigy of the France captain was burned during the country's traditional San Juan festival following Mbappe's side edge past Paraguay 1-0 in their FIFA World Cup clash.",
+								"icon_src": null,
+								"isTimeSensitive": true,
+								"publisher": "ANI",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/929cbe17-380c-43af-9164-a8fdd894bcdf.jpeg",
+								"received_rank": 12,
+								"recommended_at": 1783696479646,
+								"title": "FIFA World Cup 2026: Mbappe’s Effigy Burned in Paraguay After WC Defeat; France Sports Minister Condemns “Violence”",
+								"topic": "sports",
+								"url": "https://www.aninews.in/news/sports/football/fifa-world-cup-2026-mbappes-effigy-burned-in-paraguay-after-wc-defeat-france-sports-minister-condemns-violence20260710001017?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "aeb74c31-c9dc-4be5-921d-fc9174b55515",
+								"scheduled_corpus_item_id": "df09165f-6e2f-42b9-ad58-245c70917855",
+								"corpus_item_id": "aeb74c31-c9dc-4be5-921d-fc9174b55515",
+								"features": {
+									"t_health": 1
+								},
+								"excerpt": "We’re all wearing Apple Watches, Oura Rings, and FitBits now. Are they doing us any good?",
+								"icon_src": "https://prod-images.merino.prod.webservices.mozgcp.net/favicons/0231ffd69a50956893bc799e788dc610a7036d990f44876a9106179d987aeca1_14472.png",
+								"isTimeSensitive": false,
+								"publisher": "Vox",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/63a01561-f500-4b57-9ffd-d2e6e270af86.jpeg",
+								"received_rank": 13,
+								"recommended_at": 1783696479646,
+								"title": "Health Trackers Offer a Ton of Data. Here Are the Metrics Doctors Want You to Pay Attention To",
+								"topic": "health",
+								"url": "https://www.vox.com/good-medicine-newsletter/494789/apple-watch-oura-ring-fitbit-health-tracker-data?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "58cda059-26ff-4bd8-8872-480eef3c2e1e",
+								"scheduled_corpus_item_id": "85df3211-96b9-4297-a2b1-c6cf085398a7",
+								"corpus_item_id": "58cda059-26ff-4bd8-8872-480eef3c2e1e",
+								"features": {
+									"t_travel": 1
+								},
+								"excerpt": "From mirrored tarot temples to concrete follies in the jungle, these visionary landscapes prove that the world’s most memorable journeys sometimes begin where good taste ends.",
+								"icon_src": null,
+								"isTimeSensitive": false,
+								"publisher": "AD India",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/9c4288a7-3b3a-49ab-afb1-716207aa5bac.jpeg",
+								"received_rank": 14,
+								"recommended_at": 1783696479646,
+								"title": "The World’s Most Unconventional Travel Destinations for the Eccentric Traveller",
+								"topic": "travel",
+								"url": "https://www.architecturaldigest.in/story/the-worlds-most-unconventional-travel-destinations-for-the-eccentric-traveller/?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "9ab764ae-66e8-4438-9845-94457c48e06a",
+								"scheduled_corpus_item_id": "3fcb6506-0993-420c-9161-851ddad79ef9",
+								"corpus_item_id": "9ab764ae-66e8-4438-9845-94457c48e06a",
+								"features": {
+									"t_education": 1
+								},
+								"excerpt": "Financial literacy for students refers to the ability to manage money: budgeting, saving, investing, and recognising fraud. Only 16.7% of Indian students pass a basic financial literacy test, and most only learn it after a grave financial mistake, which makes this gap even costlier.",
+								"icon_src": null,
+								"isTimeSensitive": false,
+								"publisher": "The Economic Times",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/5a3b0235-ee52-48d3-9544-fc30fe63dacc.jpeg",
+								"received_rank": 15,
+								"recommended_at": 1783696479646,
+								"title": "Financial Literacy for Students: The Skills Indian Schools Still Aren’t Teaching",
+								"topic": "education",
+								"url": "https://m.economictimes.com/industry/services/education/financial-literacy-for-students-the-skills-indian-schools-still-arent-teaching/articleshow/132279887.cms?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "d222dca6-fb4a-4624-8379-5eac306f07c7",
+								"scheduled_corpus_item_id": "f4092c93-4cd1-4741-9552-8858ca360fe1",
+								"corpus_item_id": "d222dca6-fb4a-4624-8379-5eac306f07c7",
+								"features": {
+									"t_arts": 1
+								},
+								"excerpt": "For multicultural couples, the wedding is the easy part. The work begins later, through the daily business of making room for another’s world",
+								"icon_src": null,
+								"isTimeSensitive": false,
+								"publisher": "Vogue India",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/b8a96acf-3ae8-47de-8e73-6fc9b650424e.jpeg",
+								"received_rank": 16,
+								"recommended_at": 1783696479646,
+								"title": "3 Couples on Life After Their Multicultural Weddings, From Family Languages to Festival Rituals",
+								"topic": "arts",
+								"url": "https://www.vogue.in/content/3-couples-on-life-after-their-multicultural-weddings-from-family-languages-to-festival-rituals?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "ad45da8b-3c7c-4015-ad4c-d962bad05c72",
+								"scheduled_corpus_item_id": "7b75f484-db83-4a63-9470-11133583af3e",
+								"corpus_item_id": "ad45da8b-3c7c-4015-ad4c-d962bad05c72",
+								"features": {
+									"t_government": 1
+								},
+								"excerpt": "The fight over the 91-year-old’s reincarnation is becoming a test of China’s power over Tibet—and whether his spiritual legacy can outlast him.",
+								"icon_src": "https://prod-images.merino.prod.webservices.mozgcp.net/favicons/6bdc80aaa6508bbb127c62edd064b3228c6d36877042236992650de6e35558d6_2342.png",
+								"isTimeSensitive": false,
+								"publisher": "Time",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/2daebd16-1de0-41d2-bc11-663ac76a07a8.jpeg",
+								"received_rank": 17,
+								"recommended_at": 1783696479646,
+								"title": "China Is Already Trying to Control Who the Next Dalai Lama Will Be",
+								"topic": "government",
+								"url": "https://time.com/article/2026/07/09/china-dalai-lama-succession-tibet/?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "4ad4bebb-b202-47b7-904f-27fc8377353c",
+								"scheduled_corpus_item_id": "098af4ba-2041-4a16-92b3-05248275610b",
+								"corpus_item_id": "4ad4bebb-b202-47b7-904f-27fc8377353c",
+								"features": {
+									"t_sports": 1
+								},
+								"excerpt": "Fery is the first former Stanford player to reach the last four at Wimbledon since John McEnroe’s eighth and final Wimbledon semifinal in 1992. ",
+								"icon_src": "https://prod-images.merino.prod.webservices.mozgcp.net/favicons/f72a169d901fe296f4cc35642ffc42d1c946bd56e81f9fa2fdbe0cf5ecdf1fc9_5052.png",
+								"isTimeSensitive": false,
+								"publisher": "NBC News",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/6c09fc5d-67ed-44a0-90da-2151fe1a98d7.jpeg",
+								"received_rank": 18,
+								"recommended_at": 1783696479646,
+								"title": "Surprise Wimbledon Semifinalist Arthur Fery Developed His Game at Stanford University",
+								"topic": "sports",
+								"url": "https://www.nbcnews.com/sports/tennis/tennis-arthur-fery-wimbledon-semifinalist-stanford-rcna353659?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "0f1db6c3-3b3b-4ab5-8c79-ef9e1b24aa68",
+								"scheduled_corpus_item_id": "0f8d4e43-957a-4db6-b4f8-81cefe18b115",
+								"corpus_item_id": "0f1db6c3-3b3b-4ab5-8c79-ef9e1b24aa68",
+								"features": {
+									"t_hobbies": 1
+								},
+								"excerpt": "The report estimates India’s non-real-money gaming market generated $1.1 billion in 2025, excluding real-money gaming, and expects the market to reach $1.5 billion in 2026 before growing to $2.4 billion by 2029.",
+								"icon_src": "https://prod-images.merino.prod.webservices.mozgcp.net/favicons/4d1687e0a7f591a8c628fa1df47d8137ee10526e7aa2ec43cf6776dbc176f7a6_761.png",
+								"isTimeSensitive": false,
+								"publisher": "Fortune India",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/8f1ae59b-4c1f-47f6-ae90-41d158a624e1.jpeg",
+								"received_rank": 19,
+								"recommended_at": 1783696479646,
+								"title": "Indian Gamers Are Spending More on Shooters and Strategy Titles As Market Matures: Report",
+								"topic": "hobbies",
+								"url": "https://www.fortuneindia.com/business-news/indian-gamers-are-spending-more-on-shooters-and-strategy-titles-as-market-matures-report/147403?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "8fa9a2f9-009b-4e98-a04b-7c43c98d7bf3",
+								"scheduled_corpus_item_id": "66476ca6-979e-4c04-99c8-feec9ee05b89",
+								"corpus_item_id": "8fa9a2f9-009b-4e98-a04b-7c43c98d7bf3",
+								"features": {
+									"t_travel": 1
+								},
+								"excerpt": "Knowing these rules can help you make informed decisions and avoid unnecessary stress the next time bad weather affects your travel plans.",
+								"icon_src": null,
+								"isTimeSensitive": false,
+								"publisher": "NDTV",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/23cc7028-5977-40ca-b73b-904c421fd5c5.jpeg",
+								"received_rank": 20,
+								"recommended_at": 1783696479646,
+								"title": "Flight Delays, Cancellations Amid Heavy Rain? Your Rights May Include Refunds and Even Hotel Stays",
+								"topic": "travel",
+								"url": "https://www.ndtv.com/travel/flight-delays-cancellations-amid-heavy-rain-your-rights-may-include-refunds-and-even-hotel-stays-11751216?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "80cad332-4441-4522-a765-6bf1218e8a29",
+								"scheduled_corpus_item_id": "86fe770a-9fa9-45c4-b3e6-2f376c88711c",
+								"corpus_item_id": "80cad332-4441-4522-a765-6bf1218e8a29",
+								"features": {
+									"t_society": 1
+								},
+								"excerpt": "Time to spam your friends with photos.",
+								"icon_src": "https://prod-images.merino.prod.webservices.mozgcp.net/favicons/0231ffd69a50956893bc799e788dc610a7036d990f44876a9106179d987aeca1_14472.png",
+								"isTimeSensitive": false,
+								"publisher": "Vox",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/66e6c40a-cac3-4b46-ace2-e3f6b2ffd176.jpeg",
+								"received_rank": 21,
+								"recommended_at": 1783696479646,
+								"title": "The Lazy but Incredibly Effective Way to Stay in Touch With Friends",
+								"topic": "society",
+								"url": "https://www.vox.com/advice/494526/photo-dump-friendship?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "ecd667f6-7417-420d-87f3-2b233d4b5672",
+								"scheduled_corpus_item_id": "7e96339c-a919-41b5-8888-a9c81a47f3c4",
+								"corpus_item_id": "ecd667f6-7417-420d-87f3-2b233d4b5672",
+								"features": {
+									"t_tech": 1
+								},
+								"excerpt": "Cities in Asia, Africa, and Latin America must ensure AI infrastructure development benefits local communities and leads to sustainable economic growth.\n",
+								"icon_src": "https://prod-images.merino.prod.webservices.mozgcp.net/favicons/8a31b5617b46d67b3bf40d3123641cb230d7026ea45266351f4f766797d70ec7_12858.png",
+								"isTimeSensitive": false,
+								"publisher": "Rest of World",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/aac8d24f-bfdd-4825-8c56-6bd4853912de.jpeg",
+								"received_rank": 22,
+								"recommended_at": 1783696479646,
+								"title": "Data Centers Should Benefit the Cities That Power Them",
+								"topic": "tech",
+								"url": "https://restofworld.org/2026/data-centers-cities-communities-benefits/?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "1d8f023f-ae23-4581-8f69-5ca48af12169",
+								"scheduled_corpus_item_id": "1e4dbe8d-e8f0-4052-9607-6d0ed8e80c89",
+								"corpus_item_id": "1d8f023f-ae23-4581-8f69-5ca48af12169",
+								"features": {
+									"t_home": 1
+								},
+								"excerpt": "From the forests of Raipur to the ghats of Varanasi, Art Desire turns memories of nature and travel into layered works of art.",
+								"icon_src": null,
+								"isTimeSensitive": false,
+								"publisher": "AD India",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/a37de2d3-5c96-451f-9504-873dfc0a0953.jpeg",
+								"received_rank": 23,
+								"recommended_at": 1783696479646,
+								"title": "Wall Art: How This Kolkata-Based Artist Is Bringing Nature Into Modern Interiors",
+								"topic": "home",
+								"url": "https://www.architecturaldigest.in/story/wall-art-how-this-kolkata-based-artist-is-bringing-nature-into-modern-interiors/?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "23a1b67e-8e3b-40c5-a88d-4b88836021a6",
+								"scheduled_corpus_item_id": "ce9cfe82-9f69-4d45-9f6f-8a8aff678633",
+								"corpus_item_id": "23a1b67e-8e3b-40c5-a88d-4b88836021a6",
+								"features": {
+									"t_tech": 1
+								},
+								"excerpt": "Super-scaled-up AI models may one day lead to superintelligence, but they could be risky business today as cheaper, simpler models accelerate.",
+								"icon_src": "https://prod-images.merino.prod.webservices.mozgcp.net/favicons/7a7f0626705e3090fab40d064da0fcfe00a1558e3c9b5e672fa6acca1efd4cfd_1420.png",
+								"isTimeSensitive": false,
+								"publisher": "Fast Company",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/cac11188-b6ef-4328-912f-862c2ea849bc.jpeg",
+								"received_rank": 24,
+								"recommended_at": 1783696479646,
+								"title": "Why Are U.S. AI Companies So Sure Bigger Is Always Better?",
+								"topic": "tech",
+								"url": "https://www.fastcompany.com/91571102/why-are-u-s-ai-companies-so-sure-bigger-is-always-better?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "8eb77703-8864-4681-9d53-b69132ff1e6e",
+								"scheduled_corpus_item_id": "4dd785cb-678e-451d-b5a5-857828eced60",
+								"corpus_item_id": "8eb77703-8864-4681-9d53-b69132ff1e6e",
+								"features": {
+									"t_education-science": 1
+								},
+								"excerpt": "Astronomer David Kipping discusses why claims of extraterrestrial life keep dissolving under scrutiny, why we need a more statistically grounded approach to searching for life beyond Earth, and why it’s rational to believe that we may be alone.",
+								"icon_src": "https://prod-images.merino.prod.webservices.mozgcp.net/favicons/1b23d71e163364b53d872a27ffcaf90ec7496b24d50a59ea95362b897b3561c4_3233.png",
+								"isTimeSensitive": false,
+								"publisher": "Quanta Magazine",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/6b1e8445-66b1-4598-8d05-e626d09b4d99.jpeg",
+								"received_rank": 25,
+								"recommended_at": 1783696479646,
+								"title": "Will We Ever Find Alien Civilizations?",
+								"topic": "education-science",
+								"url": "https://www.quantamagazine.org/will-we-ever-find-alien-civilizations-20260709/?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "c59dc920-812f-4444-a6aa-b0a097b9dc6d",
+								"scheduled_corpus_item_id": "fdf4cb6e-a878-4366-be52-8229116d9a67",
+								"corpus_item_id": "c59dc920-812f-4444-a6aa-b0a097b9dc6d",
+								"features": {
+									"t_finance": 1
+								},
+								"excerpt": "Gen Z in India arrives with prior credit, unlike Millennials. TransUnion CIBIL’s “Beyond the Swipe” reveals 70% of Gen Z have credit before their first card.",
+								"icon_src": "https://prod-images.merino.prod.webservices.mozgcp.net/favicons/24ac878fad0f7356c88be48a460d3e4d749a36d58898a968fcae1a7393ca4075_3153.ico",
+								"isTimeSensitive": false,
+								"publisher": "CNBC",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/6c96495a-6e19-464b-8993-7503dfa08269.jpeg",
+								"received_rank": 26,
+								"recommended_at": 1783696479646,
+								"title": "Why Gen Z Gets Into Debt Before Its First Credit Card",
+								"topic": "finance",
+								"url": "https://www.cnbctv18.com/personal-finance/why-gen-z-gets-into-debt-before-its-first-credit-card-19941055.htm?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							},
+							{
+								"id": "e65eb6bd-a312-412e-a0bc-4b6ceaa3f57a",
+								"scheduled_corpus_item_id": "7abdac77-6e72-4444-8035-6697d17f2a6a",
+								"corpus_item_id": "e65eb6bd-a312-412e-a0bc-4b6ceaa3f57a",
+								"features": {
+									"t_career": 1
+								},
+								"excerpt": "The question you should be asking is, how do you scale your central skill?",
+								"icon_src": "https://prod-images.merino.prod.webservices.mozgcp.net/favicons/7a7f0626705e3090fab40d064da0fcfe00a1558e3c9b5e672fa6acca1efd4cfd_1420.png",
+								"isTimeSensitive": false,
+								"publisher": "Fast Company",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/cb9f9d1d-d4f1-4281-83b4-ffeacd7de434.jpeg",
+								"received_rank": 27,
+								"recommended_at": 1783696479646,
+								"title": "It’s Time to Stop Thinking About Your Career As a Lane and Start Building an Ecosystem",
+								"topic": "career",
+								"url": "https://www.fastcompany.com/91561395/its-time-to-stop-thinking-about-your-career-as-a-lane-and-start-building-an-ecosystem-innovation-career-advice?utm_source=firefox-newtab-en-intl",
+								"score": 1
+							}
+						],
+						"surfaceId": "NEW_TAB_EN_INTL",
+						"status": "success"
+					}
+				}
+			},
+			"loaded": true
+		},
+		"impressions": {
+			"feed": {}
+		},
+		"blocks": {},
+		"spocs": {
+			"spocs_endpoint": "https://spocs.getpocket.com/spocs",
+			"lastUpdated": 1783696479267,
+			"cacheUpdateTime": 1800000,
+			"onDemand": {
+				"enabled": false,
+				"loaded": false
+			},
+			"data": {},
+			"loaded": true,
+			"frequency_caps": [],
+			"blocked": [],
+			"placements": []
+		},
+		"experimentData": {
+			"utmSource": "pocket-newtab"
+		},
+		"showTopicSelection": false,
+		"report": {
+			"visible": false,
+			"data": {}
+		},
+		"sectionPersonalization": {},
+		"hideDescriptions": true,
+		"compactImages": false,
+		"imageGradient": false,
+		"newSponsoredLabel": false,
+		"titleLines": 3,
+		"descLines": 3,
+		"readTime": true
+	},
+	"Search": {
+		"fakeFocus": false,
+		"hide": false
+	},
+	"TimerWidget": {
+		"timerType": "focus",
+		"focus": {
+			"duration": 1500,
+			"initialDuration": 1500,
+			"startTime": null,
+			"isRunning": false
+		},
+		"break": {
+			"duration": 300,
+			"initialDuration": 300,
+			"startTime": null,
+			"isRunning": false
+		}
+	},
+	"ListsWidget": {
+		"selected": "taskList",
+		"lists": {
+			"taskList": {
+				"label": "",
+				"tasks": [],
+				"completed": []
+			}
+		}
+	},
+	"Wallpapers": {
+		"wallpaperList": [],
+		"highlightSeenCounter": {
+			"value": 0
+		},
+		"categories": [],
+		"uploadedWallpaper": null
+	},
+	"SectionsLayout": {
+		"configs": {}
+	},
+	"Weather": {
+		"initialized": true,
+		"lastUpdated": null,
+		"query": "",
+		"suggestions": [],
+		"hourlyForecasts": [],
+		"locationData": {},
+		"searchActive": false,
+		"locationSearchString": "",
+		"suggestedLocations": []
+	},
+	"ExternalComponents": {
+		"components": [
+			{
+				"type": "SEARCH",
+				"l10nURLs": [],
+				"componentURL": "chrome://browser/content/contentSearchHandoffUI.mjs",
+				"tagName": "content-search-handoff-ui",
+				"cssVariables": {
+					"--caret-blink-count": 5,
+					"--caret-blink-time": "2400ms"
+				},
+				"attributes": {
+					"nonhandoff": false
+				}
+			},
+			{
+				"type": "ASROUTER_MULTISTAGE_MESSAGE",
+				"mountStrategy": "react-bundle",
+				"bundleURL": "chrome://newtab/content/data/content/external-components/asrouter-newtab-multistage/asrouter-newtab-multistage.bundle.js",
+				"stylesURLs": [
+					"chrome://global/skin/in-content/common.css",
+					"chrome://newtab/content/data/content/external-components/asrouter-newtab-multistage/asrouter-newtab-multistage.css"
+				],
+				"mountFunction": "mountMultistageMessage",
+				"l10nURLs": [
+					"browser/newtab/onboarding.ftl",
+					"browser/featureCallout.ftl",
+					"browser/backupSettings.ftl"
+				],
+				"moduleURLs": [
+					"chrome://global/content/elements/moz-button.mjs",
+					"chrome://browser/content/backup/turn-on-scheduled-backups.mjs"
+				]
+			},
+			{
+				"type": "ASROUTER_NEWTAB_MESSAGE",
+				"l10nURLs": [],
+				"componentURL": "chrome://newtab/content/data/content/external-components/asrouter-newtab-message/asrouter-newtab-message.mjs",
+				"tagName": "asrouter-newtab-message",
+				"cssVariables": {},
+				"attributes": {},
+				"actors": {
+					"ASRouterNewTabMessage": {
+						"parent": {
+							"esModuleURI": "chrome://newtab/content/data/content/external-components/asrouter-newtab-message/ASRouterNewTabMessageParent.sys.mjs"
+						},
+						"child": {
+							"esModuleURI": "chrome://newtab/content/data/content/external-components/asrouter-newtab-message/ASRouterNewTabMessageChild.sys.mjs",
+							"events": {
+								"ASRouterNewTabMessage:SpecialMessageAction": {
+									"wantUntrusted": true
+								}
+							}
+						},
+						"matches": [
+							"about:home",
+							"about:newtab"
+						],
+						"remoteTypes": [
+							"privilegedabout"
+						]
+					}
+				}
+			}
+		]
+	},
+	"SportsWidget": {
+		"data": {
+			"teams": [],
+			"matches": {
+				"previous": [],
+				"current": [],
+				"next": []
+			},
+			"live": [],
+			"fetchError": {
+				"error_type": "teams_load_error"
+			}
+		},
+		"initialized": true,
+		"widgetState": "sports-intro",
+		"selectedTeams": [],
+		"matchesTab": "upcoming",
+		"followedOnly": {
+			"results": true,
+			"upcoming": true
+		},
+		"watchLive": {
+			"loaded": false,
+			"data": null
+		},
+		"lastLiveUpdated": null,
+		"liveIndex": 0,
+		"celebrations": {
+			"endedAt": {},
+			"celebrated": []
+		},
+		"loadMore": {
+			"upcoming": {
+				"loading": false,
+				"exhausted": false,
+				"lastFetchedDate": null
+			},
+			"results": {
+				"loading": false,
+				"exhausted": false,
+				"lastFetchedDate": null
+			}
+		}
+	},
+	"PrivacyWidget": {
+		"initialized": false,
+		"trackersToday": 0,
+		"sitesToday": 0,
+		"lastUpdated": null
+	}
+};
+
+1���c�           jSO�I��U����       :about:home alt-data 1;73370,script version 20260629141727  �

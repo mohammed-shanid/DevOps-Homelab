@@ -1,0 +1,14 @@
+services:
+  qbittorrent:
+    image: lscr.io/linuxserver/qbittorrent:latest
+    container_name: qbittorrent
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Kolkata
+    volumes:
+      - /home/tor/homelab/data/qbittorrent:/config
+      - /mnt/vmshare/Downloads:/downloads
+    ports:
+      - 8080:8080
+    restart: unless-stopped
